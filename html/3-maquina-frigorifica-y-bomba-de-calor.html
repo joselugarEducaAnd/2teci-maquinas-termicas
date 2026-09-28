@@ -2,13 +2,13 @@
 <html lang="es" id="exe-page-mt8g8z6s-l0rohfool">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="generator" content="eXeLearning v4.0.5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <title>3. Máquina frigorífica y bomba de calor | Máquinas térmicas</title>
 <link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
 <meta name="description" content="Máquinas térmicas. Tecnología e Ingeniería II.">
-<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260825111519ZGFPX3","packageTitle":"Máquinas térmicas","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
 <script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
 <link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
 <script src="../libs/exe_math/tex-mml-svg.js"> </script>
@@ -43,7 +43,7 @@
 <p>Para conseguir su objetivo, suelen utilizarse dos métodos: absorción o compresión. Las máquinas frigoríficas más utilizadas son las de compresión, por lo que serán las únicas que estudiemos nosotros.</p>
 <p>Estas máquinas emplean un fluido especial con bajo punto de ebullición llamado <strong>fluido frigorígeno</strong>. Cuando el fluido se evapora, absorbe calor de su entorno mientras que cuando se condensa, cede calor. Si hacemos que la evaporación se lleve a cabo en el foco frío de la máquina, el fluido absorberá calor del foco frío. Haciendo luego que condense en el foco caliente, cederá calor a dicho foco.</p>
 <p>Por esta razón, al foco frío de estas máquinas se le llama evaporador y al foco caliente condensador. El esquema termodinámico de estas máquinas será el siguiente:</p>
-<p><img src="../content/resources/mf_y_bc.jpeg" alt="" width="601" height="530" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/mf_y_bc.jpeg" alt="Esquemas de la máquina frigorífica y de la bomba de calor: con el trabajo W se extrae Q2 del evaporador (T2) y se cede Q1 al condensador (T1); la energía útil es Q2 en la frigorífica y Q1 en la bomba de calor." width="601" height="530" style="display: block; margin-left: auto; margin-right: auto;"></p>
 <p>En este apartado simplemente vamos a ver cómo están construidas estas máquinas, sin entrar a calcular parámetros ni magnitudes. Aunque en las siguientes secciones se verán particularidades de estas máquinas, <strong>el esquema básico de elementos que las componen es el mismo para todas. </strong>Están constituidas por cuatro elementos básicos:</p>
 <ul>
 <li><strong>Compresor:</strong> aumenta la presión del frigorígeno para facilitar su condensación y, además, posibilita la circulación del fluido.</li>
@@ -52,7 +52,7 @@
 <li><strong>Evaporador:</strong> en él, el fluido frigorígeno cambia de fase de líquido a gas, <strong>absorbiendo calor </strong>en el proceso.</li>
 </ul>
 <p>En este esquema puedes ver cómo se disponen los elementos en una máquina de este tipo:</p>
-<p><img src="../content/resources/esquema_mf-bc.jpeg" width="600" height="649" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img alt="Circuito de compresión de vapor: compresor (1→2), condensador que cede Q1 (2→3), válvula de expansión (3→4) y evaporador que absorbe Q2 (4→1), con zona de alta y de baja presión." src="../content/resources/esquema_mf-bc.jpeg" width="600" height="649" style="display: block; margin-left: auto; margin-right: auto;"></p>
 <p>El fluido frigorígeno sigue en estas máquinas un <strong>ciclo de compresión de vapor</strong>, compuesto por <strong>dos isobáricas</strong> y <strong>dos adiabáticas</strong>. No lo confundas con el <strong>ciclo de Carnot</strong> de la sección 1: aquel es el ciclo ideal, con dos isotermas, y sirve para fijar el máximo de eficiencia que se podría alcanzar entre esas dos temperaturas; este es el ciclo real que recorre el fluido dentro de la máquina.</p>
 <figure class="exe-figure exe-image float-right license-custom" style="width: 400px;"><img src="../content/resources/ciclo_carnot.png" alt="Diagrama p-V del ciclo de compresión de vapor: dos isobáricas horizontales (2→3 y 4→1) y dos adiabáticas (1→2 y 3→4)" width="400" height="349"><figcaption>Ciclo de compresión de vapor en el diagrama p-V.</figcaption></figure>
 <p><strong>Adiabática 1→2 (Compresor):</strong> comprime el fluido frigorígeno que le llega en estado de vapor, con lo que reduce su volumen y aumenta su presión y su temperatura. Además, facilita la circulación del fluido a lo largo de la máquina.<br><strong>Isobárica 2→3 (Condensador):</strong> es un intercambiador de calor donde se condensa el fluido frigorígeno por circulación de aire o de agua. En este proceso se cede una cantidad de calor Q<sub>1</sub> y el fluido disminuye su volumen, a presión constante.<br><strong>Adiabática 3→4 (Sistema de expansión):</strong> el fluido líquido se expansiona disminuyendo su presión y aumentando su volumen. Este proceso supone una reducción brusca de temperatura, al ser adiabático.<br><strong>Isobárica 4→1 (Evaporador): </strong>el fluido se evapora absorbiendo un calor Q<sub>2</sub> de su entorno y provocando un enfriamiento de este.</p></div></div></section></div>
