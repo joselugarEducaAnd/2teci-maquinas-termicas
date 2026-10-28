@@ -181,7 +181,7 @@ const PH={
    work:'Trabajo negativo: el cigüeñal tiene que empujar al pistón para comprimir el gas.'},
  comb:{n:3,name:'Explosión',col:'--exp',
    valves:{otto:'Las dos válvulas <b>cerradas</b>. Salta la <b>chispa de la bujía</b>.',diesel:'Las dos válvulas <b>cerradas</b>. El <b>inyector</b> pulveriza el gasóleo, que se autoinflama.'},
-   piston:{otto:'Combustión instantánea en el PMS: la presión sube sin que el pistón se mueva (isócora, aporte de Q₁).',diesel:'La combustión dura lo que dura la inyección: el pistón ya baja y la presión se mantiene (isobárica, aporte de Q₁).'},
+   piston:{otto:'Combustión instantánea en el PMS: la presión sube sin que el pistón se mueva (isócora, aporte de Q<sub>C</sub>).',diesel:'La combustión dura lo que dura la inyección: el pistón ya baja y la presión se mantiene (isobárica, aporte de Q<sub>C</sub>).'},
    work:{otto:'Trabajo: nulo en el salto 2→3 (volumen constante).',diesel:'Trabajo positivo: el gas ya empuja al pistón a presión constante.'}},
  exp:{n:3,name:'Expansión',col:'--exp',
    valves:{otto:'Las dos válvulas <b>cerradas</b>.',diesel:'Las dos válvulas <b>cerradas</b>.'},
@@ -189,7 +189,7 @@ const PH={
    work:'<b>Trabajo positivo: es el único tiempo en el que el motor produce trabajo útil.</b> El pistón arrastra al cigüeñal.'},
  drop:{n:4,name:'Escape',col:'--esc',
    valves:{otto:'Se <b>abre</b> la válvula de escape.',diesel:'Se <b>abre</b> la válvula de escape.'},
-   piston:{otto:'En el PMI la presión cae de golpe hasta la exterior (isócora, cesión de Q₂).',diesel:'En el PMI la presión cae de golpe hasta la exterior (isócora, cesión de Q₂).'},
+   piston:{otto:'En el PMI la presión cae de golpe hasta la exterior (isócora, cesión de Q<sub>F</sub>).',diesel:'En el PMI la presión cae de golpe hasta la exterior (isócora, cesión de Q<sub>F</sub>).'},
    work:'Trabajo: nulo en el salto 4→1 (volumen constante).'},
  esc:{n:4,name:'Escape',col:'--esc',
    valves:{otto:'Válvula de escape <b>abierta</b> · válvula de admisión cerrada.',diesel:'Válvula de escape <b>abierta</b> · válvula de admisión cerrada.'},
@@ -242,10 +242,10 @@ function drawPV(){
   const qx=X(C.m==='otto'?C.V2:(C.V2+C.V3)/2)+(C.m==='otto'?-30:0), qy=C.m==='otto'?Y((C.p2+C.p3)/2):Y(C.p2)-30;
   if(C.m==='otto') el('path',{d:`M${qx-26},${qy} h22 l-6,-5 m6,5 l-6,5`,stroke:'#d1342f','stroke-width':3,fill:'none'},st);
   else el('path',{d:`M${qx},${qy-22} v20 l-5,-6 m5,6 l5,-6`,stroke:'#d1342f','stroke-width':3,fill:'none'},st);
-  const q1=el('text',{x:C.m==='otto'?qx-40:qx+8,y:C.m==='otto'?qy-8:qy-14,'font-size':13,'font-weight':'bold',fill:'#d1342f'},st);q1.innerHTML='Q<tspan font-size="9" dy="3">1</tspan>';
+  const q1=el('text',{x:C.m==='otto'?qx-40:qx+8,y:C.m==='otto'?qy-8:qy-14,'font-size':13,'font-weight':'bold',fill:'#d1342f'},st);q1.innerHTML='Q<tspan font-size="9" dy="3">C</tspan>';
   const x4=X(C.V1), y4=Y((C.p4+P0)/2);
   el('path',{d:`M${x4+4},${y4} h22 l-6,-5 m6,5 l-6,5`,stroke:'#2563eb','stroke-width':3,fill:'none'},st);
-  const q2=el('text',{x:x4+12,y:y4-14,'font-size':13,'font-weight':'bold',fill:'#2563eb'},st);q2.innerHTML='Q<tspan font-size="9" dy="3">2</tspan>';
+  const q2=el('text',{x:x4+12,y:y4-14,'font-size':13,'font-weight':'bold',fill:'#2563eb'},st);q2.innerHTML='Q<tspan font-size="9" dy="3">F</tspan>';
   pvDyn={trace:el('path',{class:'dyn',fill:'none','stroke-width':4,'stroke-linecap':'round'}),
          dot:el('circle',{class:'dyn',r:7,fill:'#fff','stroke-width':3})};
 }
@@ -618,8 +618,8 @@ function setMode(m){
   if(three) buildEngine(three,m);
   drawPV(); drawTimeline(); fixPhaseHeight(); render();
   $('note').innerHTML=m==='otto'
-   ? `Ciclo teórico con relación de compresión r = 9, γ = 1,4 y p<sub>1</sub> = 1 bar. Cilindrada unitaria ${fmt(VU,0)} cm³. Las válvulas se abren y cierran justo en los puntos muertos y la combustión es instantánea: en un motor real hay adelantos y retrasos y el diagrama se redondea.`
-   : `Ciclo teórico con relación de compresión r = 18, relación de combustión r<sub>c</sub> = 2, γ = 1,4 y p<sub>1</sub> = 1 bar. Cilindrada unitaria ${fmt(VU,0)} cm³. La inyección dura del PMS hasta ${Math.round(C.thIso-360)}° después: en ese tramo la presión no cambia. En un motor real hay adelantos y retrasos y el diagrama se redondea.`;
+   ? `Ciclo teórico con relación de compresión R<sub>c</sub> = 9, γ = 1,4 y p<sub>1</sub> = 1 bar. Cilindrada unitaria ${fmt(VU,0)} cm³. Las válvulas se abren y cierran justo en los puntos muertos y la combustión es instantánea: en un motor real hay adelantos y retrasos y el diagrama se redondea.`
+   : `Ciclo teórico con relación de compresión R<sub>c</sub> = 18, relación de combustión r<sub>comb</sub> = 2, γ = 1,4 y p<sub>1</sub> = 1 bar. Cilindrada unitaria ${fmt(VU,0)} cm³. La inyección dura del PMS hasta ${Math.round(C.thIso-360)}° después: en ese tramo la presión no cambia. En un motor real hay adelantos y retrasos y el diagrama se redondea.`;
 }
 function togglePlay(){playing=!playing;$('bPlay').textContent=playing?'⏸ Pausa':'▶ Reproducir';$('bPlay').setAttribute('aria-label',playing?'Pausa':'Reproducir');last=performance.now();}
 $('bPlay').onclick=togglePlay;

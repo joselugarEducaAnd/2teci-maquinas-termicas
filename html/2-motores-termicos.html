@@ -85,7 +85,7 @@
 <li><strong>Cilindro: </strong>es un hueco con forma cilíndrica practicado en el bloque y en el que se desplaza el pistón.</li>
 <li><strong>Émbolo o pistón: </strong>se encuentra en el cilindro y puede desplazarse dentro de él, transformando la energía térmica de la combustión (que se realiza sobre su superficie) en energía mecánica de traslación.</li>
 <li><strong>Cámara de combustión:</strong> es el espacio que queda entre la culata y el cilindro cuando el pistón está arriba del todo del cilindro. Se llama así porque es donde se quema el combustible.</li>
-<li><strong>Carrera (C):</strong> cada desplazamiento del pistón desde su límite superior hasta el inferior. Los límites del movimiento del pistón, que delimitan la carrera, se denominan puntos muertos, por lo que tenemos dos:
+<li><strong>Carrera (L):</strong> cada desplazamiento del pistón desde su límite superior hasta el inferior. Los límites del movimiento del pistón, que delimitan la carrera, se denominan puntos muertos, por lo que tenemos dos:
 <ul>
 <li><strong>Punto muerto superior (PMS): </strong>punto en el que el pistón está arriba del todo, lo más cerca posible de la culata.</li>
 <li><strong>Punto muerto inferior (PMI):</strong> punto en el que el pistón está debajo del todo, lo más cerca posible del cárter.</li>
@@ -117,26 +117,24 @@
 <p>Se trata de un <strong>motor de encendido provocado (MEP)</strong>, de <strong>gasolina</strong> que sigue un <strong>ciclo termodinámico Otto</strong>. El ciclo Otto es un ciclo cerrado, que utiliza una mezcla de aire y gasolina y para su ignición tiene la ayuda de una chispa eléctrica producida por el sistema de encendido (bujía).</p>
 <p>Este ciclo consta de 4 etapas o tiempos: admisión, compresión, explosión-expansión y escape. Es un ciclo formado por <strong>dos adiabáticas</strong> y <strong>dos isócoras</strong>.</p>
 <p>Los <strong>cuatro tiempos</strong> del motor son los que siguen:</p>
-<figure class="exe-figure exe-image float-right license-custom" style="width: 400px;"><img src="../content/resources/ciclo_otto_teorico.jpeg" alt="Ciclo Otto teórico en el diagrama p-V: admisión 0→1, compresión adiabática 1→2, explosión isócora 2→3 con aporte de Q1, expansión adiabática 3→4, escape isócoro 4→1 con cesión de Q2 y escape 1→0; W es el área encerrada." width="400" height="378"></figure>
+<figure class="exe-figure exe-image float-right license-custom" style="width: 400px;"><img src="../content/resources/ciclo_otto_teorico.jpeg" alt="Ciclo Otto teórico en el diagrama p-V: admisión 0→1, compresión adiabática 1→2, explosión isócora 2→3 con aporte de QC, expansión adiabática 3→4, escape isócoro 4→1 con cesión de QF y escape 1→0; W es el área encerrada." width="400" height="378"></figure>
 <p><strong>1. Admisión (0→1): </strong>el pistón desciende arrastrado por el movimiento del cigüeñal y entra en el cilindro una <strong>mezcla aire-combustible</strong> a través de la válvula de admisión.<br><strong>2. Compresión (1→2):</strong> el pistón asciende arrastrado también por el movimiento del cigüeñal y comprime el aire y combustible, de forma que aumenta la presión y la temperatura de la mezcla. <em>Este proceso es tan rápido que podemos considerarlo adiabático (Q = 0), porque no da tiempo a que se intercambie calor con el exterior.</em><br><strong>3. Explosión-expansión (2→3→4):</strong> al alcanzar la mezcla la máxima compresión, salta la chispa en la bujía, explosiona la mezcla y baja el pistón. El movimiento del pistón arrastra el cigüeñal, que realiza el trabajo útil. <em>La ignición de la gasolina es prácticamente instantánea, por lo que se puede considerar el proceso 2→3 como isócoro porque la presión aumenta antes de que dé tiempo al pistón a moverse (ΔV = 0). El proceso 3→4 podemos considerarlo adiabático por la misma razón que el 1→2.</em><br><strong>4. Escape (4→1→0):</strong> se abre la válvula de escape <em>(la presión cae de forma prácticamente instantánea hasta la presión exterior, en un proceso 4→1 que puede considerarse isócoro)</em> y el pistón sube y expulsa los gases (1→0). La válvula de escape se cierra y la válvula de admisión se abre, con lo que se está en disposición de iniciar un nuevo ciclo.</p>
 <p>En estas figuras puedes ver una representación de las posiciones del pistón y las válvulas en cada tiempo:</p>
 <p><img src="../content/resources/esquema_Otto_4t.png" alt="Los cuatro tiempos del motor Otto: admisión (válvula de admisión abierta, el pistón baja), compresión (válvulas cerradas, sube), explosión (válvulas cerradas, baja) y escape (válvula de escape abierta, sube)." width="800" height="287" style="display: block; margin-left: auto; margin-right: auto;"></p>
-<p>Explora el ciclo con este simulador: reprodúcelo o avánzalo paso a paso y observa a la vez el pistón, las válvulas, el estado del gas y el punto que recorre el diagrama p-V. Con el selector de la parte superior puedes comparar el motor de gasolina con el diésel.</p>
-<iframe class="sda03-motor" src="../content/resources/motor_4t_otto_diesel.html" title="Simulador del motor de cuatro tiempos, de gasolina y diésel, con el diagrama p-V sincronizado" width="100%" height="1700" loading="lazy" style="display: block; width: 100%; max-width: 1120px; margin: 1rem auto; border: 0; border-radius: 14px; background: #ffffff;"></iframe>
-<p>La diferencia entre la energía aportada Q<sub>1</sub> y la cedida Q<sub>2</sub>, se transforma en <strong>energía mecánica</strong>. Esta se manifiesta durante la carrera de expansión, que es la <strong>única en la que se produce trabajo útil </strong>y donde el pistón arrastra al cigüeñal. En el resto de las carreras es el cigüeñal el que arrastra al pistón gracias a la acción del volante de inercia, o bien, como se hace por norma, disponer, como mínimo, cuatro cilindros en un motor, combinando su funcionamiento de tal modo que en todo momento por lo menos uno de ellos trabaje.</p>
+<p>La diferencia entre la energía aportada Q<sub>C</sub> y la cedida Q<sub>F</sub>, se transforma en <strong>energía mecánica</strong>. Esta se manifiesta durante la carrera de expansión, que es la <strong>única en la que se produce trabajo útil </strong>y donde el pistón arrastra al cigüeñal. En el resto de las carreras es el cigüeñal el que arrastra al pistón gracias a la acción del volante de inercia, o bien, como se hace por norma, disponer, como mínimo, cuatro cilindros en un motor, combinando su funcionamiento de tal modo que en todo momento por lo menos uno de ellos trabaje.</p>
 <p>En este vídeo tienes explicado con animaciones el funcionamiento de este tipo de motores:</p>
 <p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube-nocookie.com/embed/sRMBq--LVjk" title="Vídeo: cómo funciona el motor de combustión interna de un automóvil (Hidráulica y neumática)" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
 <h2>Motor Diesel de 4 tiempos</h2>
 <p>Se trata de un motor de <strong>encendido por compresión (MEC)</strong>, de <strong>gasoil</strong> que sigue un <strong>ciclo termodinámico Diesel</strong>. Utiliza aire a presión y la inyección de un combustible pulverizado el cual se inflama por la alta temperatura del aire lograda después de la compresión del aire.</p>
 <p>Este ciclo consta de 4 etapas o tiempos: admisión, compresión, explosión-expansión y escape. Es un ciclo formado por <strong>dos adiabáticas</strong>, <strong>una isobárica </strong>y <strong>una isócora</strong>:</p>
-<figure class="exe-figure exe-image float-right license-custom" style="width: 400px;"><img src="../content/resources/ciclo_diesel_teorico.jpeg" alt="Ciclo Diesel teórico en el diagrama p-V: admisión 0→1, compresión adiabática 1→2, combustión isobárica 2→3 con aporte de Q1, expansión adiabática 3→4, escape isócoro 4→1 con cesión de Q2 y escape 1→0." width="400" height="368"></figure>
+<figure class="exe-figure exe-image float-right license-custom" style="width: 400px;"><img src="../content/resources/ciclo_diesel_teorico.jpeg" alt="Ciclo Diesel teórico en el diagrama p-V: admisión 0→1, compresión adiabática 1→2, combustión isobárica 2→3 con aporte de QC, expansión adiabática 3→4, escape isócoro 4→1 con cesión de QF y escape 1→0." width="400" height="368"></figure>
 <p>Los cuatro tiempos de este motor son como sigue:</p>
-<p><strong>1. Admisión (0→1):</strong> el pistón desciende arrastrado por el movimiento del cigüeñal y entra en el cilindro <strong>aire</strong> a través de la válvula de admisión.<br><strong>2. Compresión (1→2):</strong> el pistón asciende arrastrado también por el movimiento del cigüeñal y comprime el aire a una<br>elevada presión (40-50 atm y 600ºC). <em>Este proceso es tan rápido que podemos considerarlo adiabático (Q = 0), porque no da tiempo a que se intercambie calor con el exterior, por eso el aire se calienta mucho.</em><br><strong>3. Explosión-expansión (2→3→4): </strong>al alcanzar el aire la máxima compresión, se introduce el combustible finamente pulverizado mediante una bomba inyectora. Al contacto con el aire caliente, el<br>combustible se autoinflama y se produce la combustión. <em>Como ahora la combustión se va realizando a medida que el combustible va entrando en la cámara de combustión, el pistón va bajando mientras se inflama la mezcla y por eso la presión no aumenta y podemos considerar el proceso 2→3 como isobárico (a presión constante). </em>La presión de los gases baja el pistón y el movimiento del pistón arrastra el cigüeñal, que realiza el trabajo útil. El proceso 3→4 se puede considerar adiabático por la misma razón que el 1→2.<br>4. <strong>Escape (4→1→0): </strong>se abre la válvula de escape<em> (la presión cae de forma prácticamente instantánea hasta la presión exterior, en un proceso 4→1 que puede considerarse isócoro)</em> y el pistón sube y expulsa los gases (1→0). La válvula de escape se cierra y la válvula de admisión se abre, con lo que se está en disposición de iniciar un nuevo ciclo.</p>
+<p><strong>1. Admisión (0→1):</strong> el pistón desciende arrastrado por el movimiento del cigüeñal y entra en el cilindro <strong>aire</strong> a través de la válvula de admisión.<br><strong>2. Compresión (1→2):</strong> el pistón asciende arrastrado también por el movimiento del cigüeñal y comprime el aire a una<br>elevada presión (40-50 atm y 600 °C). <em>Este proceso es tan rápido que podemos considerarlo adiabático (Q = 0), porque no da tiempo a que se intercambie calor con el exterior, por eso el aire se calienta mucho.</em><br><strong>3. Explosión-expansión (2→3→4): </strong>al alcanzar el aire la máxima compresión, se introduce el combustible finamente pulverizado mediante una bomba inyectora. Al contacto con el aire caliente, el<br>combustible se autoinflama y se produce la combustión. <em>Como ahora la combustión se va realizando a medida que el combustible va entrando en la cámara de combustión, el pistón va bajando mientras se inflama la mezcla y por eso la presión no aumenta y podemos considerar el proceso 2→3 como isobárico (a presión constante). </em>La presión de los gases baja el pistón y el movimiento del pistón arrastra el cigüeñal, que realiza el trabajo útil. El proceso 3→4 se puede considerar adiabático por la misma razón que el 1→2.<br>4. <strong>Escape (4→1→0): </strong>se abre la válvula de escape<em> (la presión cae de forma prácticamente instantánea hasta la presión exterior, en un proceso 4→1 que puede considerarse isócoro)</em> y el pistón sube y expulsa los gases (1→0). La válvula de escape se cierra y la válvula de admisión se abre, con lo que se está en disposición de iniciar un nuevo ciclo.</p>
 <p>Aquí tienes un vídeo con la explicación detallada del funcionamiento de este tipo de motores. <em>Ten en cuenta que se utilizan otras palabras para denominar las diferentes fases, pero las que tienes que conocer y utilizar son las que te he explicado aquí. Las del vídeo no suelen emplearse en España sino en Latinoamérica.</em></p>
 <p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube-nocookie.com/embed/_YiISR57Sz4" title="Vídeo: cómo funciona el motor diésel (Sabin Ingeniería Civil)" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
 <table class="tabla-datos"><thead><tr><th>Ventajas de los motores diesel frente a los de gasolina</th><th>Inconvenientes de los motores diesel frente a los de gasolina</th></tr></thead><tbody><tr><td><ul>
 <li><strong>Mayor relación de compresión. </strong>El motor diésel solo comprime aire, por lo que puede comprimirlo cuanto desee. El motor de gasolina comprime una mezcla con combustible, por lo que no puede comprimirlo demasiado o la gasolina podría explotar antes de la cuenta al calentarse demasiado la mezcla.</li>
-<li><strong>Mayor rendimiento térmico. </strong>En el motor de gasolina el rendimiento está aproximadamente en un 24% y en el motor diésel en el 34%, debido a que puede tener mayores relaciones de compresión. Esto trae como consecuencia:
+<li><strong>Mayor rendimiento. </strong>En el motor de gasolina el rendimiento está aproximadamente en un 24% y en el motor diésel en el 34%, debido a que puede tener mayores relaciones de compresión. Esto trae como consecuencia:
 <ul>
 <li><strong>Menor consumo</strong> (por el mejor aprovechamiento del combustible).</li>
 <li><strong>Menor contaminación por emisión de CO<sub>2</sub></strong>, responsable del efecto invernadero y calentamiento global.</li>
@@ -171,6 +169,8 @@
 <li style="text-align: left;"><strong>Mayores niveles de contaminación</strong> generados por la combustión de los aditivos de la mezcla (contiene aceite además de gasolina).</li>
 </ul></td></tr></tbody></table>
 </div>
+<p>Ahora que conoces los dos motores de cuatro tiempos, explora su ciclo con este simulador: reprodúcelo o avánzalo paso a paso y observa a la vez el pistón, las válvulas, el estado del gas y el punto que recorre el diagrama p-V. Con el selector de la parte superior cambias entre el motor de gasolina (Otto) y el diésel.</p>
+<iframe class="sda03-motor" src="../content/resources/motor_4t_otto_diesel.html" title="Simulador del motor de cuatro tiempos, de gasolina y diésel, con el diagrama p-V sincronizado" width="100%" height="1700" loading="lazy" style="display: block; width: 100%; max-width: 1120px; margin: 1rem auto; border: 0; border-radius: 14px; background: #ffffff;"></iframe>
 <p>En este vídeo tienes un resumen de todos los tipos de motores que hemos visto, por si quieres ampliar:</p>
 <p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube-nocookie.com/embed/4FPUS5CwhUo" title="Vídeo: motores de 4 y de 2 tiempos y sus diferencias (driving 4 answers en español)" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
 <script>(function(){function ajusta(){var fs=document.querySelectorAll("iframe.sda03-motor");for(var i=0;i<fs.length;i++){var f=fs[i];if(!f.getBoundingClientRect().width)continue;try{var d=f.contentDocument,b=d&&d.body;if(!b)continue;var h=Math.ceil(b.getBoundingClientRect().height+16);if(h>300&&Math.abs(h-f.clientHeight)>4)f.style.height=h+"px";}catch(e){}}}document.addEventListener("click",function(){setTimeout(ajusta,120);setTimeout(ajusta,600);},true);window.addEventListener("load",function(){ajusta();setTimeout(ajusta,400);});setInterval(ajusta,1000);})();</script>
@@ -194,31 +194,31 @@
 <div class="exe-fx exe-accordion">
 <h2>Carrera</h2>
 <p>Ya vimos anteriormente este parámetro. Es la distancia máxima que puede recorrer el pistón a lo largo del cilindro. Es, por tanto, la distancia entre el punto muerto inferior (PMI) y el punto muerto superior (PMS). <em>Por extensión, también se denomina carrera al movimiento del pistón en sí, por lo que, en ocasiones, escucharás hablar de "carrera de admisión" o "carrera de compresión", por ejemplo.</em></p>
-<p><em><img src="../content/resources/carrera.jpeg" alt="El mismo cilindro con el pistón en el PMI y en el PMS; la carrera (C) es la distancia entre ambas posiciones." width="400" height="371" style="display: block; margin-left: auto; margin-right: auto;"></em></p>
-<p><strong>Se suele denotar mediante la letra</strong> <strong>C</strong> (en ocasiones, mediante la letra L; en las colecciones y en la prueba de acceso, mediante la letra s) y se suele expresar en <strong>milímetros (mm)</strong> (en ocasiones, puede que en cm)</p>
+<p><em><img src="../content/resources/carrera.jpeg" alt="El mismo cilindro con el pistón en el PMI y en el PMS; la carrera (L) es la distancia entre ambas posiciones." width="400" height="371" style="display: block; margin-left: auto; margin-right: auto;"></em></p>
+<p><strong>Se denota mediante la letra</strong> <strong>L</strong>, como en la prueba de acceso (en algunos libros la verás como C o como s), y se suele expresar en <strong>milímetros (mm)</strong> (en ocasiones, puede que en cm)</p>
 <h2>Diámetro del cilindro</h2>
 <p>Es el diámetro que tiene cada cilindro del motor (si hay varios cilindros, todos tendrán el mismo diámetro). </p>
 <p><strong>Se suele denotar mediante la letra D</strong> y se suele expresar en <strong>milímetros (mm)</strong>.</p>
-<p>En muchas ocasiones, te darán el dato del diámetro y la carrera de un motor de forma conjunta en la forma "DxC". Si, por ejemplo, te dicen que tienes un motor con DxC = 52 x 56 mm, significa que su diámetro es 52 mm y su carrera 56 mm.</p>
+<p>En muchas ocasiones, te darán el dato del diámetro y la carrera de un motor de forma conjunta en la forma "D × L". Si, por ejemplo, te dicen que tienes un motor con D × L = 52 × 56 mm, significa que su diámetro es 52 mm y su carrera 56 mm.</p>
 <p>La <strong>relación entre diámetro y carrera</strong> sirve para clasificar a los motores según sea su valor. Se calcula dividiendo el diámetro entre la carrera, ambos expresados en las mismas unidades (por ejemplo, mm). Según su valor, el motor puede ser:</p>
 <ul>
-<li>Motor <strong>cuadrado: \(\frac{D}{C}=1\).</strong> Es decir, el diámetro y la carrera son iguales.</li>
-<li>Motor <strong>supercuadrado o de carrera corta: \(\frac{D}{C}>1\).</strong> Es decir, el diámetro es mayor que la carrera.</li>
-<li>Motor <strong>subcuadrado o de carrera larga: \(\frac{D}{C}<1\).</strong> Es decir, el diámetro es menor que la carrera.</li>
+<li>Motor <strong>cuadrado: \(\frac{D}{L}=1\).</strong> Es decir, el diámetro y la carrera son iguales.</li>
+<li>Motor <strong>supercuadrado o de carrera corta: \(\frac{D}{L}>1\).</strong> Es decir, el diámetro es mayor que la carrera.</li>
+<li>Motor <strong>subcuadrado o de carrera larga: \(\frac{D}{L}<1\).</strong> Es decir, el diámetro es menor que la carrera.</li>
 </ul>
 <h2>Cilindrada</h2>
 <p>La cilindrada es el <strong>volumen</strong> de los <strong>cilindros</strong> de un motor. Podemos encontrar dos tipos de cilindrada:</p>
 <ul>
-<li><strong>Cilindrada unitaria: </strong>es el volumen de <strong>cada uno</strong> de los cilindros de un motor. Se calcula directamente como el volumen de un cilindro de diámetro D y altura C (la carrera):</li>
+<li><strong>Cilindrada unitaria: </strong>es el volumen de <strong>cada uno</strong> de los cilindros de un motor. Se calcula directamente como el volumen de un cilindro de diámetro D y altura L (la carrera):</li>
 </ul>
-<div class="marco-formula"><p class="formula-bloque">\[V_{u}=\frac{\pi \cdot D^{2}}{4}\cdot C\]</p></div>
+<div class="marco-formula"><p class="formula-bloque">\[V_{u}=\frac{\pi \cdot D^{2}}{4}\cdot L\]</p></div>
 <ul>
-<li><strong>Cilindrada total</strong> o <strong>cilindrada del motor</strong> o simplemente <strong>cilindrada</strong>: es el volumen <strong>total</strong> de los cilindros del motor. Simplemente se calcula multiplicando la cilindrada unitaria por el <strong>número de cilindros del motor (z</strong>, que en las colecciones y en la prueba de acceso verás como <strong>Z)</strong>:</li>
+<li><strong>Cilindrada total</strong> o <strong>cilindrada del motor</strong> o simplemente <strong>cilindrada</strong>: es el volumen <strong>total</strong> de los cilindros del motor. Simplemente se calcula multiplicando la cilindrada unitaria por el <strong>número de cilindros del motor (Z)</strong>:</li>
 </ul>
-<div class="marco-formula"><p class="formula-bloque">\[V_{T}=z\cdot V_{u}=z\cdot \frac{\pi \cdot D^{2}}{4}\cdot C\]</p></div>
+<div class="marco-formula"><p class="formula-bloque">\[V_{T}=Z\cdot V_{u}=Z\cdot \frac{\pi \cdot D^{2}}{4}\cdot L\]</p></div>
 <p>En esta animación puedes ver la cilindrada de un motor marcada en color naranja:</p>
 <p><img src="../content/resources/Displacement.gif" alt="Animación de un motor de cuatro cilindros en la que el volumen barrido por cada pistón se va marcando en naranja; la suma es la cilindrada total." width="288" height="216" style="display: block; margin-left: auto; margin-right: auto;"></p>
-<p>La cilindrada suele expresarse en <strong>centímetros cúbicos</strong> (<strong>cm<sup>3</sup></strong>, aunque, en  ocasiones, puedes encontrarlo como <strong>cc</strong>). En los motores grandes, es posible encontrar la cilindrada expresada en litros. Así, una cilindrada de 2.6 litros equivaldría a 2600 cm<sup>3 </sup>(o 2600 cc).</p>
+<p>La cilindrada suele expresarse en <strong>centímetros cúbicos</strong> (<strong>cm<sup>3</sup></strong>, aunque, en  ocasiones, puedes encontrarlo como <strong>cc</strong>). En los motores grandes, es posible encontrar la cilindrada expresada en litros. Así, una cilindrada de 2,6 litros equivaldría a 2 600 cm<sup>3 </sup>(o 2 600 cc).</p>
 <h2>Volumen de la cámara de combustión</h2>
 <p>Es el volumen mínimo que queda en la cámara de combustión, cuando el pistón está en el PMS. </p>
 <p>En esta imagen de un cilindro tienes indicada la cámara de combustión en color rojo:</p>
@@ -228,15 +228,15 @@
 <p>La <strong>relación de compresión</strong> en un motor de combustión interna es el número que permite medir o expresar la <strong>proporción, en volumen, que se ha comprimido</strong> la mezcla de aire-combustible (motor Otto) o el aire (motor diésel) dentro de la cámara de combustión de un cilindro. Es decir, el volumen máximo, cuando el pistón está en el PMI (volumen del <span style="color: #ff6600;"><strong>cilindro</strong></span> más el de la <span style="color: #ff0000;"><strong>cámara de combustión</strong></span>) entre el volumen mínimo, cuando el pistón está en el PMS (volumen de la <span style="color: #ff0000;"><strong>cámara de combustión</strong></span>).</p>
 <p>En la siguiente figura tienes esos volúmenes marcados en colores para identificarlos mejor:</p>
 <p><img src="../content/resources/relacion_compresion.jpeg" alt="Volúmenes de la relación de compresión: con el pistón en el PMI, V1 = Vu + Vcc; con el pistón en el PMS, V2 = Vcc." width="400" height="450" style="display: block; margin-left: auto; margin-right: auto;">Para calcular la relación de compresión utilizaremos, por lo tanto, esta fórmula:</p>
-<div class="marco-formula"><p class="formula-bloque">\[r= \frac{V_{1}}{V_{2}}=\frac{V_{u}+V_{cc}}{V_{cc}}=\frac{\frac{\pi D^{2}}{4}\cdot C+V_{cc}}{V_{cc}}\]</p></div>
+<div class="marco-formula"><p class="formula-bloque">\[R_{c}= \frac{V_{1}}{V_{2}}=\frac{V_{u}+V_{cc}}{V_{cc}}=\frac{\frac{\pi D^{2}}{4}\cdot L+V_{cc}}{V_{cc}}\]</p></div>
 <p>Despejando de la expresión anterior se obtiene el <strong>volumen de la cámara de combustión</strong> a partir de la cilindrada unitaria y de la relación de compresión, que es la forma en la que suele pedirse:</p>
-<div class="marco-formula"><p class="formula-bloque">\[V_{cc}=\frac{V_{u}}{r-1}\]</p></div>
-<p><strong>La relación de compresión suele denotarse por r </strong>(en ocasiones por Rc o incluso ρ) y es <strong>adimensional</strong>, puesto que los volúmenes hay que ponerlos en las mismas unidades (usualmente, cm<sup>3</sup>). Fíjate que la relación de compresión siempre será mayor que 1 y, habitualmente, se expresa en la forma <strong>n:1</strong> (donde n es un número mayor que 1). Por ejemplo, te pueden decir que un motor tiene una relación de compresión de 15 o bien de 15:1. Es exactamente lo mismo.</p>
+<div class="marco-formula"><p class="formula-bloque">\[V_{cc}=\frac{V_{u}}{R_{c}-1}\]</p></div>
+<p><strong>La relación de compresión se denota por R<sub>c</sub></strong> y es <strong>adimensional</strong>, puesto que los volúmenes hay que ponerlos en las mismas unidades (usualmente, cm<sup>3</sup>). Fíjate que la relación de compresión siempre será mayor que 1 y, habitualmente, se expresa en la forma <strong>n:1</strong> (donde n es un número mayor que 1). Por ejemplo, te pueden decir que un motor tiene una relación de compresión de 15 o bien de 15:1. Es exactamente lo mismo.</p>
 <h4>Importancia de la relación de compresión en el diseño del motor</h4>
-<p>La relación de compresión influye directamente en la eficiencia del motor. <strong>Mientras mayor sea r, mayor será el rendimiento.</strong> En efecto, si expresamos el rendimiento de un <strong>motor Otto</strong> ideal según el rendimiento de Carnot (en función de las temperaturas), podemos expresarlo en función de la relación entre los volúmenes máximo (V1) y mínimo (V2) del ciclo, es decir, en función de la <strong>relación de compresión</strong>. Quedaría así:</p>
-<p class="formula-bloque">\[\eta =1-\frac{1}{r^{\gamma -1}}\]</p>
-<p>En el caso del<strong> motor Diesel </strong>la expresión es más compleja y aparece otro parámetro llamado r<sub>c</sub> (relación de combustión) que es la relación entre el volumen al final de la isobara y el volumen en el PMS, pero la conclusión es la misma: <strong>a mayor relación de compresión, mejor rendimiento del motor</strong>:</p>
-<p class="formula-bloque">\[\eta =1-\frac{r_{c}^{\gamma }-1}{\gamma r^{\gamma -1}(r_{c}-1)}\]</p>
+<p>La relación de compresión influye directamente en la eficiencia del motor. <strong>Mientras mayor sea R<sub>c</sub>, mayor será el rendimiento.</strong> En efecto, si expresamos el rendimiento de un <strong>motor Otto</strong> ideal según el rendimiento de Carnot (en función de las temperaturas), podemos expresarlo en función de la relación entre los volúmenes máximo (V1) y mínimo (V2) del ciclo, es decir, en función de la <strong>relación de compresión</strong>. Quedaría así:</p>
+<p class="formula-bloque">\[\eta =1-\frac{1}{R_{c}^{\gamma -1}}\]</p>
+<p>En el caso del<strong> motor Diesel </strong>la expresión es más compleja y aparece otro parámetro llamado r<sub>comb</sub> (relación de combustión) que es la relación entre el volumen al final de la isobara y el volumen en el PMS, pero la conclusión es la misma: <strong>a mayor relación de compresión, mejor rendimiento del motor</strong>:</p>
+<p class="formula-bloque">\[\eta =1-\frac{r_{comb}^{\gamma }-1}{\gamma R_{c}^{\gamma -1}(r_{comb}-1)}\]</p>
 <p>El problema es que no se puede aumentar indefinidamente la relación de compresión porque eso implicaría hacer un motor muy grande pero, además, en el caso de los motores Otto, no puede ser demasiado grande para que no detone la gasolina antes de tiempo. <span style="font-size: 1.05em;">Mientras <strong>mayor sea la relación de compresión</strong></span><span style="font-size: 1.05em;">, más estaremos comprimiendo el aire o la mezcla en el cilindro y, por tanto, <strong>más se calentará</strong> (recuerda que el proceso es tan rápido que puede considerarse casi adiabático). Si se calienta demasiado la mezcla en el motor Otto, la gasolina puede arder espontáneamente. Lo vemos con más detalle para cada tipo de motor:</span></p>
 <h5><strong>Relación de compresión en motores Diesel (índice de cetano)</strong></h5>
 <p>Los motores Diesel <strong></strong><strong>solo comprimen aire</strong>, por lo que <strong>pueden tener relaciones de compresión muy altas</strong> porque, de hecho, buscan calentar mucho el aire para asegurar que el gasóleo prende nada más entrar en la cámara de combustión. Es normal encontrar relaciones de compresión desde 15:1 y hasta 20:1.</p>
@@ -270,29 +270,29 @@
 <h2>Energía y potencia térmicas absorbidas del combustible</h2>
 <h3>Energía térmica</h3>
 <p>Estos motores obtienen su energía de la ignición del combustible (ya sea gasolina o gasóleo), por lo que la energía obtenida dependerá del poder calorífico del combustible y de la cantidad (masa) que quememos:</p>
-<div class="marco-formula"><p class="formula-bloque">\[E_{ABS}=m\cdot P_{C}\]</p></div>
+<div class="marco-formula"><p class="formula-bloque">\[E_{ap}=m\cdot PCI\]</p></div>
 <p>Donde:</p>
 <ul>
-<li><strong>E<sub>ABS</sub>:</strong> energía térmica absorbida por el motor al quemar el combustible (usualmente en kJ o en kcal)</li>
+<li><strong>E<sub>ap</sub>:</strong> energía aportada por el combustible al quemarse (usualmente en kJ o en kcal)</li>
 <li><strong>m:</strong> masa de combustible quemada (en kg)</li>
-<li><strong>P<sub>C</sub>:</strong> poder calorífico del combustible (usualmente en kJ/kg o en kcal/kg)</li>
+<li><strong>PCI:</strong> poder calorífico inferior del combustible: la energía que libera 1 kg al quemarse, sin contar el calor que se lleva el vapor de agua de los gases de escape (usualmente en kJ/kg o en kcal/kg)</li>
 </ul>
 <p>El gasóleo tiene un poder calorífico algo mayor que la gasolina (alrededor de un 13 % más), siendo esa una de las razones por las que los motores diésel consumen menos que los de gasolina.</p>
 <h3>Potencia térmica</h3>
 <p>La potencia térmica es, simplemente, el ritmo al que se obtiene la energía térmica al quemar el combustible. Matemáticamente sería así:</p>
-<div class="marco-formula"><p class="formula-bloque">\[P_{ABS}=\frac{E_{ABS}}{t}=\frac{m\cdot P_{C}}{t}=\dot{m}\cdot P_{C}\]</p></div>
+<div class="marco-formula"><p class="formula-bloque">\[P_{ap}=\frac{E_{ap}}{t}=\frac{m}{t}\cdot PCI\]</p></div>
 <p>Donde:</p>
 <ul>
-<li><strong>P<sub>ABS</sub>:</strong> potencia térmica absorbida al quemar el combustible (W o kW)</li>
-<li><strong>E<sub>ABS</sub>:</strong> energía térmica absorbida al quemar el combustible (J o kJ)</li>
+<li><strong>P<sub>ap</sub>:</strong> potencia aportada por el combustible al quemarse (W o kW)</li>
+<li><strong>E<sub>ap</sub>:</strong> energía aportada por el combustible (J o kJ)</li>
 <li><strong>t:</strong> tiempo (s) </li>
 <li><strong>m:</strong> masa de combustible (kg)</li>
-<li><strong>P<sub>C</sub>: </strong>poder calorífico del combustible (kJ/kg o kcal/kg)</li>
-<li><strong>\(\dot{m}\): gasto de combustible </strong>(masa de combustible quemada por unidad de tiempo)(kg/s)</li>
+<li><strong>PCI: </strong>poder calorífico inferior del combustible (kJ/kg o kcal/kg)</li>
+<li><strong>m/t:</strong> masa de combustible quemada por unidad de tiempo (kg/s)</li>
 </ul>
 <p>Muy a menudo el enunciado no te dará el consumo en masa sino en <strong>volumen</strong> (litros a la hora, por ejemplo). Para pasar de uno al otro necesitas la <strong>densidad (ρ)</strong> del combustible, que el enunciado te dará en kg/l o en kg/dm<sup>3</sup>:</p>
-<div class="marco-formula"><p class="formula-bloque">\[\dot{m}=\dot{V}\cdot \rho \quad \Rightarrow \quad P_{ABS}=\dot{V}\cdot \rho \cdot P_{C}\]</p></div>
-<p>Donde \(\dot{V}\) es el volumen de combustible consumido por unidad de tiempo. Cuidado con las unidades: si el poder calorífico viene en kJ/kg, el gasto tiene que acabar en kilogramos por unidad de tiempo. Y recuerda que <strong>1 l = 1 dm<sup>3</sup></strong>, así que una densidad en kg/l y otra en kg/dm<sup>3</sup> son el mismo número.</p>
+<div class="marco-formula"><p class="formula-bloque">\[\frac{m}{t}=G\cdot \rho \quad \Rightarrow \quad P_{ap}=G\cdot \rho \cdot PCI\]</p></div>
+<p>Donde <strong>G</strong> es el <strong>consumo de combustible</strong>: el volumen que se quema por unidad de tiempo (por ejemplo, en l/h). Cuidado con las unidades: si el PCI viene en kJ/kg, el producto G·ρ tiene que acabar en kilogramos por unidad de tiempo. Y recuerda que <strong>1 l = 1 dm<sup>3</sup></strong>, así que una densidad en kg/l y otra en kg/dm<sup>3</sup> son el mismo número.</p>
 <h2>Trabajo indicado y potencia indicada</h2>
 <h3>Trabajo indicado</h3>
 <p>Es el <strong>trabajo realizado por el fluido en el cilindro del motor</strong>. Sería el área del diagrama del ciclo correspondiente (Otto o Diesel). Si conociésemos la presión media indicada (p<sub>mi</sub>) del ciclo, el trabajo indicado sería fácilmente calculable con esta expresión:</p>
@@ -341,13 +341,13 @@
 <p>Observa que los motores diésel tienen siempre su zona de par máximo a menores rpm que los de gasolina. Es otra de las razones del menor consumo de los diésel: hacen menos igniciones por minuto que los de gasolina.</p>
 <p>Además, el par de los motores diésel es mayor que el de los motores de gasolina. Esto se debe a diversos factores, como su mayor eficiencia (por su mayor relación de compresión), su geometría (suelen tener pistones más estrechos pero con mayor carrera que los gasolina), que suelen tener siempre un turbo (más sobre esto en el próximo apartado) o el mayor poder calorífico del combustible que usan.</p>
 <h2>Potencia efectiva (útil)</h2>
-<p>Ya sabes que la potencia es la energía por unidad de tiempo. La potencia efectiva indica el ritmo al que se obtiene el trabajo efectivo:</p>
-<p class="formula-bloque">\[P_{e}=\frac{W_{e}}{t}\]</p>
+<p>Ya sabes que la potencia es la energía por unidad de tiempo. La potencia efectiva, o <strong>potencia útil (P<sub>u</sub>)</strong>, indica el ritmo al que se obtiene el trabajo efectivo:</p>
+<p class="formula-bloque">\[P_{u}=\frac{W_{e}}{t}\]</p>
 <p>Si el motor tiene un par M, entonces la potencia efectiva que produce viene dada por la siguiente expresión:</p>
-<div class="marco-formula"><p class="formula-bloque">\[P = M\cdot \omega = M \cdot \frac{2\pi\cdot n }{60}\]</p></div>
+<div class="marco-formula"><p class="formula-bloque">\[P_{u} = M\cdot \omega = M \cdot \frac{2\pi\cdot n }{60}\]</p></div>
 <p>Donde:</p>
 <ul>
-<li><strong>P:</strong> potencia mecánica del motor (W)</li>
+<li><strong>P<sub>u</sub>:</strong> potencia útil del motor (W)</li>
 <li><strong>M:</strong> par motor (N·m)</li>
 <li><strong>ω:</strong> velocidad angular del motor (rad/s)</li>
 <li><strong>n: </strong>régimen de giro del motor (rpm)</li>
@@ -364,20 +364,20 @@
 <p><img src="../content/resources/caract_diesel.jpeg" alt="Curvas características del motor diésel: par máximo de unos 340 N·m hacia 2200 rpm y potencia máxima de unos 99 kW hacia 3450 rpm, a un régimen mayor que el del par máximo." width="600" height="378" style="display: block; margin-left: auto; margin-right: auto;"></p>
 <h2>Consumo específico</h2>
 <p>Es un parámetro muy utilizado en este tipo de motores y nos indica la relación entre el <strong>combustible quemado</strong> (consumido) en <strong>gramos (g)</strong> y la <strong>energía mecánica</strong> obtenida en el eje del motor, <strong>en kWh</strong> (fíjate que ahora no es energía química de la combustión sino ya la energía útil del motor). Se calcula así:</p>
-<div class="marco-formula"><p class="formula-bloque">\[C_{esp}=\frac{m}{P\cdot t}=\frac{\dot{m}}{P}\]</p></div>
+<div class="marco-formula"><p class="formula-bloque">\[G_{esp}=\frac{m}{P_{u}\cdot t}=\frac{G\cdot \rho}{P_{u}}\]</p></div>
 <p>Donde:</p>
 <ul>
-<li><strong>C<sub>esp</sub>:</strong> consumo específico <strong>(g/kWh)</strong>. En las colecciones y en la prueba de acceso aparece como <strong>G<sub>esp</sub></strong>.</li>
+<li><strong>G<sub>esp</sub>:</strong> consumo específico <strong>(g/kWh)</strong></li>
 <li><strong>m:</strong> masa de combustible quemada <strong>(g)</strong></li>
-<li><strong>P:</strong> potencia <strong>mecánica</strong> del motor <strong>(kW)</strong></li>
+<li><strong>P<sub>u</sub>:</strong> potencia <strong>útil</strong> del motor <strong>(kW)</strong></li>
 <li><strong>t:</strong> tiempo de funcionamiento <strong>(h)</strong></li>
-<li><strong>\(\dot{m}\): </strong>gasto de combustible <strong>(g/h)</strong></li>
+<li><strong>G·ρ: </strong>masa de combustible consumida por unidad de tiempo <strong>(g/h)</strong>, con G en l/h y ρ en g/l</li>
 </ul>
 <p>Es importante resaltar que el consumo específico <strong>nos relaciona la parte mecánica con la térmica</strong> del motor. Es una manera indirecta de darnos el rendimiento de un motor. Nos está diciendo cuánto combustible necesitaremos quemar para que el motor nos proporcione una energía mecánica determinada.</p>
 <h2>Rendimiento del motor</h2>
 <p>El rendimiento es un parámetro básico de los motores. Al igual que el consumo específico, es lo que nos relaciona la parte mecánica con la térmica del motor.</p>
 <p>Recordando la definición de rendimiento de un motor térmico genérico (trabajo útil dividido entre calor absorbido del foco caliente), el rendimiento de estos motores podremos calcularlo así:</p>
-<div class="marco-formula"><p class="formula-bloque">\[\eta =\frac{W_{e}}{E_{ABS}}=\frac{P}{P_{ABS}}=\frac{P}{\dot{m}\cdot P_{C}}\]</p></div>
+<div class="marco-formula"><p class="formula-bloque">\[\eta =\frac{W_{e}}{E_{ap}}=\frac{P_{u}}{P_{ap}}=\frac{P_{u}}{G\cdot \rho \cdot PCI}\]</p></div>
 <p>Dividiendo entre el tiempo arriba y abajo, lo ponemos en función de las potencias que son más utilizadas que los trabajos y energías. La última expresión es útil tenerla porque está en función de parámetros muy utilizados en los motores (potencia, gasto de combustible y poder calorífico).</p>
 <p>Ese es el rendimiento <strong>global</strong> del motor. En realidad, puede haber varios rendimientos en un problema de motores. Recuerda que hay varias fuentes de pérdidas:</p>
 <ul>
@@ -385,7 +385,7 @@
 <li>Pérdidas por rozamientos en el propio motor (<strong>rendimiento efectivo η<sub>e</sub></strong>): son las pérdidas en las mismas piezas del motor, que hacen que el trabajo efectivo sea menor que el trabajo indicado.</li>
 <li>Pérdidas en la transmisión del vehículo (<strong>rendimiento de la transmisión η<sub>t</sub></strong>): son pérdidas por rozamientos y vibraciones en los ejes y engranajes de la caja de cambios y que hace que no llegue todo el trabajo efectivo del motor a las ruedas sino que llegue menos. <em>No es una pérdida del motor en sí, por lo que normalmente no tendremos que tenerlas en cuenta, pero puede que en algún problema nos den este rendimiento también.</em></li>
 </ul>
-<p>Como siempre que hay varias fuentes de pérdidas, <strong>el rendimiento es el producto de los rendimientos parciales que intervengan</strong>. Fíjate bien en cuáles entran: el rendimiento del motor que hemos definido arriba, \(\eta=W_{e}/E_{ABS}\), es el producto de los dos primeros, porque la transmisión no es una pérdida del motor. La transmisión solo entra cuando el problema pregunta por lo que llega a las ruedas:</p>
+<p>Como siempre que hay varias fuentes de pérdidas, <strong>el rendimiento es el producto de los rendimientos parciales que intervengan</strong>. Fíjate bien en cuáles entran: el rendimiento del motor que hemos definido arriba, \(\eta=W_{e}/E_{ap}\), es el producto de los dos primeros, porque la transmisión no es una pérdida del motor. La transmisión solo entra cuando el problema pregunta por lo que llega a las ruedas:</p>
 <div class="marco-formula"><p class="formula-bloque">\[\eta_{motor}=\eta_{i}\cdot \eta_{e} \qquad \eta_{ruedas}=\eta_{i}\cdot \eta_{e}\cdot \eta_{t}\]</p></div>
 <p>Si se desprecian las pérdidas de alguno de estos tipos, sería equivalente a considerar ese rendimiento como la unidad, por lo que no alteraría el producto final.</p>
 </div>
