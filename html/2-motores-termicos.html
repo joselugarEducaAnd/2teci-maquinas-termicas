@@ -97,7 +97,7 @@
 <li><strong>Cigüeñal: </strong>en él están conectadas todas las bielas del motor y transfiere la energía rotativa a la caja de cambios del motor.</li>
 <li><strong>Válvula de admisión: </strong>es la válvula que deja entrar al cilindro la mezcla de aire y combustible (motor Otto) o el aire (motor Diesel).</li>
 <li><strong>Válvula de escape:</strong> es la válvula que deja salir los gases de la combustión al exterior.</li>
-<li><strong>Volante de inercia:</strong> acumula energía en forma de momento inercia cuando se realiza una combustión, para cederla al motor cuando la precise, dando la sensación de un movimiento continuo. Se encuentra en un extremo del cigüeñal.</li>
+<li><strong>Volante de inercia:</strong> es una rueda pesada que acumula energía cinética de rotación durante la carrera de expansión y la devuelve en las otras tres, para que el giro del cigüeñal sea uniforme. Se encuentra en un extremo del cigüeñal.</li>
 </ul>
 <h1>Clasificación de los motores de combustión interna alternativos</h1>
 <p>Estos motores se pueden clasificar atendiendo a dos criterios: la forma en que se produce la combustión del combustible en el cilindro y el número de etapas en las que se divide cada ciclo del motor.</p>
@@ -145,7 +145,7 @@
 </ul></td><td><ul>
 <li><strong>Precio más elevado</strong>, por tener mayor coste de construcción.</li>
 <li><strong>Más ruidosos</strong> por las fuertes explosiones de la combustión. Los motores de gasolina queman de manera más homogénea y suave el combustible al estar premezclado con el aire.</li>
-<li><strong>Mayor contaminación por emisión de partículas contaminantes</strong> (óxidos nitrosos de partículas no quemadas y monóxido de carbono CO). Estas partículas las emiten los coches diésel antiguos en especial. Los coches diésel modernos incorporan un completo filtro de partículas para eliminar prácticamente el 100% de las partículas no quemadas en su combustión y también incorporan un sistema para eliminar los óxidos nitrosos en base a una disolución de urea (<strong><em>Adblue</em></strong>) que reduce hasta prácticamente cero las emisiones de estos peligrosos compuestos de nitrógeno.</li>
+<li><strong>Mayor contaminación por emisión de partículas contaminantes</strong> (óxidos de nitrógeno, NO<sub>x</sub>, y partículas sin quemar). Estas partículas las emiten los coches diésel antiguos en especial. Los coches diésel modernos incorporan un completo filtro de partículas para eliminar prácticamente el 100% de las partículas no quemadas en su combustión y también incorporan un sistema para eliminar los óxidos de nitrógeno con una disolución de urea (<strong><em>Adblue</em></strong>) que reduce hasta prácticamente cero las emisiones de estos peligrosos compuestos de nitrógeno.</li>
 </ul></td></tr></tbody></table>
 <p>En este vídeo tienes una comparativa de los dos tipos de motores para fijar ideas:</p>
 <p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube-nocookie.com/embed/PGcpm2uS4Xs" title="Vídeo: motor de gasolina frente a motor de gasóleo (Sabin Ingeniería Civil)" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
@@ -163,7 +163,7 @@
 <li style="text-align: left;"><strong>No tiene válvulas</strong> (sujetas a gran desgaste).</li>
 <li style="text-align: left;"><strong>Mayor potencia</strong>, ya que el motor realiza trabajo útil en cada vuelta del cigüeñal (el de cuatro tiempos lo realiza cada dos vueltas).</li>
 </ul></td><td><ul>
-<li style="text-align: left;"><strong>Menor rendimiento</strong> mecánico.</li>
+<li style="text-align: left;"><strong>Menor rendimiento</strong> mecánico: tiene más pérdidas por rozamiento.</li>
 <li style="text-align: left;"><strong>Mayor temperatura de funcionamiento</strong>, ya que la combustión de la mezcla se produce con una frecuencia superior.</li>
 <li style="text-align: left;"><strong>Mayor desgaste</strong>, por funcionar a elevadas rpm y por el mayor calentamiento.</li>
 <li style="text-align: left;"><strong>Mayores niveles de contaminación</strong> generados por la combustión de los aditivos de la mezcla (contiene aceite además de gasolina).</li>
@@ -232,9 +232,23 @@
 <p>Despejando de la expresión anterior se obtiene el <strong>volumen de la cámara de combustión</strong> a partir de la cilindrada unitaria y de la relación de compresión, que es la forma en la que suele pedirse:</p>
 <div class="marco-formula"><p class="formula-bloque">\[V_{cc}=\frac{V_{u}}{R_{c}-1}\]</p></div>
 <p><strong>La relación de compresión se denota por R<sub>c</sub></strong> y es <strong>adimensional</strong>, puesto que los volúmenes hay que ponerlos en las mismas unidades (usualmente, cm<sup>3</sup>). Fíjate que la relación de compresión siempre será mayor que 1 y, habitualmente, se expresa en la forma <strong>n:1</strong> (donde n es un número mayor que 1). Por ejemplo, te pueden decir que un motor tiene una relación de compresión de 15 o bien de 15:1. Es exactamente lo mismo.</p>
+<div class="bloque bloque-resuelto"><p class="marco-titulo">Ejemplo resuelto. Parámetros geométricos</p>
+<p>Un motor de gasolina de cuatro cilindros tiene una cilindrada de 1 400 cm<sup>3</sup>, una carrera de 75 mm y una relación de compresión 9,5:1. Calcula el diámetro de los cilindros y el volumen de la cámara de combustión.</p>
+<p><strong><em>Solución</em></strong></p>
+<p><strong>Datos:</strong> V<sub>T</sub> = 1 400 cm<sup>3</sup>; Z = 4; L = 75 mm = 7,5 cm; R<sub>c</sub> = 9,5. Trabajamos en centímetros para que los volúmenes salgan en cm<sup>3</sup>.</p>
+<p>Primero, lo que desplaza cada cilindro:</p>
+<p class="formula-bloque">\[V_{u}=\frac{V_{T}}{Z}=\frac{\text{1 400}\ \text{cm}^{3}}{4}=350\ \text{cm}^{3}\]</p>
+<p>Despejamos el diámetro de la cilindrada unitaria:</p>
+<p class="formula-bloque">\[V_{u}=\frac{\pi D^{2}}{4}\cdot L\;\Rightarrow\; D=\sqrt{\frac{4\,V_{u}}{\pi\,L}}\]</p>
+<p class="formula-bloque">\[D=\sqrt{\frac{4\cdot 350\ \text{cm}^{3}}{\pi\cdot \text{7,5}\ \text{cm}}}=\text{7,708}\ \text{cm}=\text{77,08}\ \text{mm}\]</p>
+<p>Y la cámara de combustión, de la relación de compresión:</p>
+<p class="formula-bloque">\[V_{cc}=\frac{V_{u}}{R_{c}-1}=\frac{350\ \text{cm}^{3}}{\text{9,5}-1}=\text{41,18}\ \text{cm}^{3}\]</p>
+<p><strong>Resultado:</strong> D = 77,08 mm; V<sub>cc</sub> = 41,18 cm<sup>3</sup>. Comprobación: (350 + 41,18)/41,18 = 9,5, la relación de compresión del enunciado.</p>
+</div>
 <h4>Importancia de la relación de compresión en el diseño del motor</h4>
-<p>La relación de compresión influye directamente en la eficiencia del motor. <strong>Mientras mayor sea R<sub>c</sub>, mayor será el rendimiento.</strong> En efecto, si expresamos el rendimiento de un <strong>motor Otto</strong> ideal según el rendimiento de Carnot (en función de las temperaturas), podemos expresarlo en función de la relación entre los volúmenes máximo (V1) y mínimo (V2) del ciclo, es decir, en función de la <strong>relación de compresión</strong>. Quedaría así:</p>
-<p class="formula-bloque">\[\eta =1-\frac{1}{R_{c}^{\gamma -1}}\]</p>
+<p>La relación de compresión influye directamente en la eficiencia del motor. <strong>Mientras mayor sea R<sub>c</sub>, mayor será el rendimiento.</strong> El ciclo Otto ideal no es un ciclo de Carnot, pero su rendimiento también se puede calcular: aplicando a sus dos transformaciones adiabáticas la ecuación p·V<sup>γ</sup> = cte (la que viste en la unidad de principios de máquinas) se llega a una expresión que solo depende de la relación de compresión y del gas:</p>
+<div class="marco-formula"><p class="formula-bloque">\[\eta =1-\frac{1}{R_{c}^{\,\gamma -1}}\]</p></div>
+<p>donde <strong>γ</strong> es el <strong>coeficiente adiabático</strong> del gas, que vale 1,4 para el aire. Por ejemplo, con R<sub>c</sub> = 9: η = 1 − 1/9<sup>0,4</sup> = 1 − 1/2,408 = 0,5848, es decir, un 58,48 %. Es el rendimiento del ciclo ideal, el techo teórico de ese motor; uno real se queda en torno a la mitad (un 30–35 %), por los rozamientos, las pérdidas de calor y porque la combustión no es instantánea.</p>
 <p>En el caso del<strong> motor Diesel </strong>la expresión es más compleja y aparece otro parámetro llamado r<sub>comb</sub> (relación de combustión) que es la relación entre el volumen al final de la isobara y el volumen en el PMS, pero la conclusión es la misma: <strong>a mayor relación de compresión, mejor rendimiento del motor</strong>:</p>
 <p class="formula-bloque">\[\eta =1-\frac{r_{comb}^{\gamma }-1}{\gamma R_{c}^{\gamma -1}(r_{comb}-1)}\]</p>
 <p>El problema es que no se puede aumentar indefinidamente la relación de compresión porque eso implicaría hacer un motor muy grande pero, además, en el caso de los motores Otto, no puede ser demasiado grande para que no detone la gasolina antes de tiempo. <span style="font-size: 1.05em;">Mientras <strong>mayor sea la relación de compresión</strong></span><span style="font-size: 1.05em;">, más estaremos comprimiendo el aire o la mezcla en el cilindro y, por tanto, <strong>más se calentará</strong> (recuerda que el proceso es tan rápido que puede considerarse casi adiabático). Si se calienta demasiado la mezcla en el motor Otto, la gasolina puede arder espontáneamente. Lo vemos con más detalle para cada tipo de motor:</span></p>
@@ -277,7 +291,7 @@
 <li><strong>m:</strong> masa de combustible quemada (en kg)</li>
 <li><strong>PCI:</strong> poder calorífico inferior del combustible: la energía que libera 1 kg al quemarse, sin contar el calor que se lleva el vapor de agua de los gases de escape (usualmente en kJ/kg o en kcal/kg)</li>
 </ul>
-<p>El gasóleo tiene un poder calorífico algo mayor que la gasolina (alrededor de un 13 % más), siendo esa una de las razones por las que los motores diésel consumen menos que los de gasolina.</p>
+<p>Por kilogramo, la gasolina y el gasóleo liberan casi la misma energía: unos 43 MJ/kg (la gasolina, incluso algo más). Por <strong>litro</strong>, en cambio, el gasóleo libera un 10–13 % más, porque es más denso. Por eso, con el mismo depósito, un diésel recorre más kilómetros; la otra razón es que su rendimiento es mayor.</p>
 <h3>Potencia térmica</h3>
 <p>La potencia térmica es, simplemente, el ritmo al que se obtiene la energía térmica al quemar el combustible. Matemáticamente sería así:</p>
 <div class="marco-formula"><p class="formula-bloque">\[P_{ap}=\frac{E_{ap}}{t}=\frac{m}{t}\cdot PCI\]</p></div>
@@ -297,6 +311,7 @@
 <h3>Trabajo indicado</h3>
 <p>Es el <strong>trabajo realizado por el fluido en el cilindro del motor</strong>. Sería el área del diagrama del ciclo correspondiente (Otto o Diesel). Si conociésemos la presión media indicada (p<sub>mi</sub>) del ciclo, el trabajo indicado sería fácilmente calculable con esta expresión:</p>
 <p class="formula-bloque">\[W_{i}=p_{mi}\cdot (V_{PMI}-V_{PMS})=p_{mi}\cdot V_{u}\]</p>
+<p>Ese es el trabajo indicado de <strong>un cilindro</strong>. En el motor entero hay que sumar los Z cilindros: <strong>W<sub>i</sub> = p<sub>mi</sub>·V<sub>T</sub> = p<sub>mi</sub>·Z·V<sub>u</sub></strong>, y es el que se usa en la potencia indicada.</p>
 <h3>Potencia indicada</h3>
 <p>Es el ritmo al que se realiza el trabajo indicado. Aquí hay que tener en cuenta una distinción entre los motores de 2 tiempos y los de 4, porque en los 2T se recorre el ciclo completo en una vuelta del cigüeñal, mientras que en los de 4T se necesitan dos vueltas para completar el ciclo.</p>
 <p>Así, podemos poner la expresión de la <strong>potencia indicada </strong>como:</p>
@@ -339,7 +354,7 @@
 <p>En esta imagen tienes representado gráficamente el par de un motor (en N·m) frente a su régimen de giro (en rpm). Estas gráficas se denominan "<strong>características par-velocidad" o "curvas de par"</strong> y son creadas por el fabricante al medir el motor en un banco de pruebas. Te he incluido un motor gasolina y uno diésel en la misma gráfica para compararlos:</p>
 <p><img alt="Curvas de par frente al régimen de giro: el diésel alcanza unos 340 N·m hacia 2000–2300 rpm y cae por encima de 3500 rpm; el Otto sube despacio hasta unos 234 N·m hacia 4300 rpm." src="../content/resources/curvas_de_par.jpeg" width="600" height="409" style="display: block; margin-left: auto; margin-right: auto;"></p>
 <p>Observa que los motores diésel tienen siempre su zona de par máximo a menores rpm que los de gasolina. Es otra de las razones del menor consumo de los diésel: hacen menos igniciones por minuto que los de gasolina.</p>
-<p>Además, el par de los motores diésel es mayor que el de los motores de gasolina. Esto se debe a diversos factores, como su mayor eficiencia (por su mayor relación de compresión), su geometría (suelen tener pistones más estrechos pero con mayor carrera que los gasolina), que suelen tener siempre un turbo (más sobre esto en el próximo apartado) o el mayor poder calorífico del combustible que usan.</p>
+<p>Además, el par de los motores diésel es mayor que el de los motores de gasolina. Esto se debe a diversos factores, como su mayor eficiencia (por su mayor relación de compresión), su geometría (suelen tener pistones más estrechos pero con mayor carrera que los gasolina), que suelen tener siempre un turbo (más sobre esto en el próximo apartado) o la mayor energía que aporta cada litro de su combustible.</p>
 <h2>Potencia efectiva (útil)</h2>
 <p>Ya sabes que la potencia es la energía por unidad de tiempo. La potencia efectiva, o <strong>potencia útil (P<sub>u</sub>)</strong>, indica el ritmo al que se obtiene el trabajo efectivo:</p>
 <p class="formula-bloque">\[P_{u}=\frac{W_{e}}{t}\]</p>
@@ -374,6 +389,9 @@
 <li><strong>G·ρ: </strong>masa de combustible consumida por unidad de tiempo <strong>(g/h)</strong>, con G en l/h y ρ en g/l</li>
 </ul>
 <p>Es importante resaltar que el consumo específico <strong>nos relaciona la parte mecánica con la térmica</strong> del motor. Es una manera indirecta de darnos el rendimiento de un motor. Nos está diciendo cuánto combustible necesitaremos quemar para que el motor nos proporcione una energía mecánica determinada.</p>
+<p>Si conoces el rendimiento y el PCI, el consumo específico sale directamente, sin pasar por las potencias (un kilovatio-hora son 3 600 kJ):</p>
+<p class="formula-bloque">\[G_{esp}=\frac{\text{3 600}}{\eta\cdot PCI}\quad \text{(en kg/kWh, con el PCI en kJ/kg)}\]</p>
+<p>Por ejemplo, con η = 0,30 y PCI = 43 000 kJ/kg: G<sub>esp</sub> = 3 600/(0,30 · 43 000) = 0,2791 kg/kWh = 279,07 g/kWh. Cuanto mayor es el rendimiento, menor es el consumo específico.</p>
 <h2>Rendimiento del motor</h2>
 <p>El rendimiento es un parámetro básico de los motores. Al igual que el consumo específico, es lo que nos relaciona la parte mecánica con la térmica del motor.</p>
 <p>Recordando la definición de rendimiento de un motor térmico genérico (trabajo útil dividido entre calor absorbido del foco caliente), el rendimiento de estos motores podremos calcularlo así:</p>
@@ -382,12 +400,32 @@
 <p>Ese es el rendimiento <strong>global</strong> del motor. En realidad, puede haber varios rendimientos en un problema de motores. Recuerda que hay varias fuentes de pérdidas:</p>
 <ul>
 <li>Pérdidas en la conversión de energía térmica a mecánica (<strong>rendimiento indicado η<sub>i</sub></strong>): son las pérdidas inherentes del ciclo termodinámico, que hacen que el trabajo indicado sea menor que la energía absorbida del foco caliente (las que ya vimos en la sección anterior al calcular el rendimiento de los motores térmicos genéricos).</li>
-<li>Pérdidas por rozamientos en el propio motor (<strong>rendimiento efectivo η<sub>e</sub></strong>): son las pérdidas en las mismas piezas del motor, que hacen que el trabajo efectivo sea menor que el trabajo indicado.</li>
+<li>Pérdidas por rozamientos en el propio motor (<strong>rendimiento mecánico η<sub>m</sub></strong>): son las pérdidas en las mismas piezas del motor, que hacen que el trabajo efectivo sea menor que el trabajo indicado. Se calcula como <strong>η<sub>m</sub> = W<sub>e</sub>/W<sub>i</sub> = P<sub>u</sub>/P<sub>i</sub></strong>.</li>
 <li>Pérdidas en la transmisión del vehículo (<strong>rendimiento de la transmisión η<sub>t</sub></strong>): son pérdidas por rozamientos y vibraciones en los ejes y engranajes de la caja de cambios y que hace que no llegue todo el trabajo efectivo del motor a las ruedas sino que llegue menos. <em>No es una pérdida del motor en sí, por lo que normalmente no tendremos que tenerlas en cuenta, pero puede que en algún problema nos den este rendimiento también.</em></li>
 </ul>
-<p>Como siempre que hay varias fuentes de pérdidas, <strong>el rendimiento es el producto de los rendimientos parciales que intervengan</strong>. Fíjate bien en cuáles entran: el rendimiento del motor que hemos definido arriba, \(\eta=W_{e}/E_{ap}\), es el producto de los dos primeros, porque la transmisión no es una pérdida del motor. La transmisión solo entra cuando el problema pregunta por lo que llega a las ruedas:</p>
-<div class="marco-formula"><p class="formula-bloque">\[\eta_{motor}=\eta_{i}\cdot \eta_{e} \qquad \eta_{ruedas}=\eta_{i}\cdot \eta_{e}\cdot \eta_{t}\]</p></div>
+<p>Como siempre que hay varias fuentes de pérdidas, <strong>el rendimiento es el producto de los rendimientos parciales que intervengan</strong>. Fíjate bien en cuáles entran: el rendimiento del motor que hemos definido arriba, \(\eta=W_{e}/E_{ap}=P_{u}/P_{ap}\), que también se llama <strong>rendimiento total</strong> (o efectivo), es el producto de los dos primeros, porque la transmisión no es una pérdida del motor. La transmisión solo entra cuando el problema pregunta por lo que llega a las ruedas:</p>
+<div class="marco-formula"><p class="formula-bloque">\[\eta=\eta_{i}\cdot \eta_{m} \qquad \eta_{ruedas}=\eta_{i}\cdot \eta_{m}\cdot \eta_{t}\]</p></div>
 <p>Si se desprecian las pérdidas de alguno de estos tipos, sería equivalente a considerar ese rendimiento como la unidad, por lo que no alteraría el producto final.</p>
+<h2>Ejemplo resuelto: potencia, rendimiento y consumo específico</h2>
+<div class="bloque bloque-resuelto"><p class="marco-titulo">Ejemplo resuelto. Parámetros energéticos</p>
+<p>En un banco de pruebas, un motor de gasolina de cuatro tiempos entrega un par de 160 N·m a 3 500 rpm y consume 20 litros de gasolina a la hora. La gasolina tiene una densidad de 0,74 kg/l y un PCI de 43 500 kJ/kg. Calcula la potencia útil, en kW y en CV, la potencia aportada por el combustible, el rendimiento del motor y su consumo específico.</p>
+<p><strong><em>Solución</em></strong></p>
+<p><strong>Datos:</strong> M = 160 N·m; n = 3 500 rpm; G = 20 l/h; ρ = 0,74 kg/l; PCI = 43 500 kJ/kg.</p>
+<p><strong>Potencia útil.</strong> Se pasa el régimen a rad/s y se multiplica por el par:</p>
+<p class="formula-bloque">\[\omega=\frac{2\pi\cdot n}{60}=\frac{2\pi\cdot \text{3 500}}{60}=\text{366,52}\ \text{rad/s}\]</p>
+<p class="formula-bloque">\[P_{u}=M\cdot \omega =160\ \text{N}\cdot\text{m}\cdot \text{366,52}\ \text{rad/s}=\text{58 643,06}\ \text{W}=\text{58,64}\ \text{kW}\]</p>
+<p class="formula-bloque">\[P_{u}=\frac{\text{58 643,06}\ \text{W}}{\text{735,5}\ \text{W/CV}}=\text{79,73}\ \text{CV}\]</p>
+<p><strong>Potencia aportada.</strong> G·ρ es la masa que se quema cada hora; multiplicada por el PCI da la energía que aporta el combustible cada hora, y al dividir entre los 3 600 s de una hora queda en kJ/s, es decir, en kW:</p>
+<p class="formula-bloque">\[G\cdot\rho =20\ \text{l/h}\cdot \text{0,74}\ \text{kg/l}=\text{14,8}\ \text{kg/h}\]</p>
+<p class="formula-bloque">\[G\cdot\rho\cdot PCI=\text{14,8}\ \text{kg/h}\cdot \text{43 500}\ \text{kJ/kg}=\text{643 800}\ \text{kJ/h}\]</p>
+<p class="formula-bloque">\[P_{ap}=\frac{\text{643 800}\ \text{kJ}}{\text{3 600}\ \text{s}}=\text{178,83}\ \text{kW}\]</p>
+<p><strong>Rendimiento:</strong></p>
+<p class="formula-bloque">\[\eta =\frac{P_{u}}{P_{ap}}=\frac{\text{58,64}\ \text{kW}}{\text{178,83}\ \text{kW}}=\text{0,3279}\]</p>
+<p class="formula-bloque">\[\text{32,79}\ \%\]</p>
+<p><strong>Consumo específico</strong>, con la masa en gramos por hora y la potencia en kW:</p>
+<p class="formula-bloque">\[G_{esp}=\frac{G\cdot\rho}{P_{u}}=\frac{\text{14 800}\ \text{g/h}}{\text{58,64}\ \text{kW}}=\text{252,37}\ \text{g/kWh}\]</p>
+<p><strong>Resultado:</strong> P<sub>u</sub> = 58,64 kW = 79,73 CV; P<sub>ap</sub> = 178,83 kW; η = 32,79 %; G<sub>esp</sub> = 252,37 g/kWh. Comprobación con la otra fórmula del consumo específico: 3 600/(0,3279 · 43 500) = 0,2524 kg/kWh, el mismo resultado.</p>
+</div>
 </div>
 </div>
 </div>
@@ -467,8 +505,8 @@
 <span>Toggle content</span>
 </button></header>
 <div class="box-content">
-<div id="idevice-mt8g8z6t-1jye4cfwm" class="idevice_node file-attachment" data-idevice-path="../idevices/file-attachment/" data-idevice-type="file-attachment" data-idevice-component-type="json" data-idevice-json-data="{&quot;intro&quot;:&quot;&lt;p&gt;Treinta problemas de motores de combustión interna alternativos —cilindrada, relación de compresión, par, potencia y consumo—, con sus resultados verificados. Los resultados van todos juntos, en un apartado «Resultados» al final del documento, para que compruebes el tuyo cuando hayas terminado.&lt;/p&gt;&quot;,&quot;showDescriptions&quot;:true,&quot;attachments&quot;:[{&quot;url&quot;:&quot;../content/resources/motores_termicos_resultados.pdf&quot;,&quot;filename&quot;:&quot;motores_termicos_resultados.pdf&quot;,&quot;mimeType&quot;:&quot;application/pdf&quot;,&quot;size&quot;:175722,&quot;title&quot;:&quot;Colección de problemas de motores térmicos.pdf&quot;,&quot;description&quot;:&quot;&quot;}]}" data-idevice-template="file-attachment.html">
-<div class="fileAttachment-IDevice"><div class="fileAttachment-intro"><p>Treinta problemas de motores de combustión interna alternativos —cilindrada, relación de compresión, par, potencia y consumo—, con sus resultados verificados. Los resultados van todos juntos, en un apartado «Resultados» al final del documento, para que compruebes el tuyo cuando hayas terminado.</p></div><ul class="fileAttachment-list"><li class="fileAttachment-item fileAttachment-item--file"><a class="fileAttachment-link" href="../content/resources/motores_termicos_resultados.pdf" download="motores_termicos_resultados.pdf"><span class="fileAttachment-text"><span class="fileAttachment-title">Colección de problemas de motores térmicos.pdf</span><span class="fileAttachment-meta">motores_termicos_resultados.pdf</span></span></a></li></ul></div>
+<div id="idevice-mt8g8z6t-1jye4cfwm" class="idevice_node file-attachment" data-idevice-path="../idevices/file-attachment/" data-idevice-type="file-attachment" data-idevice-component-type="json" data-idevice-json-data="{&quot;intro&quot;:&quot;&lt;p&gt;Treinta y tres problemas de motores de combustión interna alternativos —cilindrada, relación de compresión, par, potencia, consumo y rendimiento del ciclo Otto ideal—, con sus resultados verificados. Los resultados van todos juntos, en un apartado «Resultados» al final del documento, para que compruebes el tuyo cuando hayas terminado.&lt;/p&gt;&quot;,&quot;showDescriptions&quot;:true,&quot;attachments&quot;:[{&quot;url&quot;:&quot;../content/resources/motores_termicos_resultados.pdf&quot;,&quot;filename&quot;:&quot;motores_termicos_resultados.pdf&quot;,&quot;mimeType&quot;:&quot;application/pdf&quot;,&quot;size&quot;:201375,&quot;title&quot;:&quot;Colección de problemas de motores térmicos.pdf&quot;,&quot;description&quot;:&quot;&quot;}]}" data-idevice-template="file-attachment.html">
+<div class="fileAttachment-IDevice"><div class="fileAttachment-intro"><p>Treinta y tres problemas de motores de combustión interna alternativos —cilindrada, relación de compresión, par, potencia, consumo y rendimiento del ciclo Otto ideal—, con sus resultados verificados. Los resultados van todos juntos, en un apartado «Resultados» al final del documento, para que compruebes el tuyo cuando hayas terminado.</p></div><ul class="fileAttachment-list"><li class="fileAttachment-item fileAttachment-item--file"><a class="fileAttachment-link" href="../content/resources/motores_termicos_resultados.pdf" download="motores_termicos_resultados.pdf"><span class="fileAttachment-text"><span class="fileAttachment-title">Colección de problemas de motores térmicos.pdf</span><span class="fileAttachment-meta">motores_termicos_resultados.pdf</span></span></a></li></ul></div>
 </div>
 </div>
 </article>

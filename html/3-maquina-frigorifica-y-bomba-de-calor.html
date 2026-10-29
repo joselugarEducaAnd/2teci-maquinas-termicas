@@ -44,7 +44,7 @@
 <p>Estas máquinas emplean un fluido especial con bajo punto de ebullición llamado <strong>fluido frigorígeno</strong>. Cuando el fluido se evapora, absorbe calor de su entorno mientras que cuando se condensa, cede calor. Si hacemos que la evaporación se lleve a cabo en el foco frío de la máquina, el fluido absorberá calor del foco frío. Haciendo luego que condense en el foco caliente, cederá calor a dicho foco.</p>
 <p>Por esta razón, al foco frío de estas máquinas se le llama evaporador y al foco caliente condensador. El esquema termodinámico de estas máquinas será el siguiente:</p>
 <p><img src="../content/resources/mf_y_bc.jpeg" alt="Esquemas de la máquina frigorífica y de la bomba de calor: con el trabajo W se extrae QF del evaporador (TF) y se cede QC al condensador (TC); la energía útil es QF en la frigorífica y QC en la bomba de calor." width="601" height="530" style="display: block; margin-left: auto; margin-right: auto;"></p>
-<p>En este apartado simplemente vamos a ver cómo están construidas estas máquinas, sin entrar a calcular parámetros ni magnitudes. Aunque en las siguientes secciones se verán particularidades de estas máquinas, <strong>el esquema básico de elementos que las componen es el mismo para todas. </strong>Están constituidas por cuatro elementos básicos:</p>
+<p>Aquí vas a ver cómo están construidas por dentro. Las eficiencias están en la sección 1, y al final de esta sección tienes lo que falta para los problemas de climatización: la máquina reversible en invierno y en verano, la potencia del compresor y el coste de la energía en kWh. Aunque en las siguientes secciones se verán particularidades de estas máquinas, <strong>el esquema básico de elementos que las componen es el mismo para todas. </strong>Están constituidas por cuatro elementos básicos:</p>
 <ul>
 <li><strong>Compresor:</strong> aumenta la presión del frigorígeno para facilitar su condensación y, además, posibilita la circulación del fluido.</li>
 <li><strong>Condensador:</strong> en el condensador el fluido cambia de fase pasando de gas a líquido y <strong>cediendo calor</strong> en el proceso.</li>
@@ -99,7 +99,49 @@
 </ul>
 <p>Las más usadas, las de aire-aire, tienen una concepción casi idéntica a un aire acondicionado, por lo que suele aprovecharse para construir una <strong>máquina reversible</strong>: puede funcionar como un aire acondicionado en verano y como una bomba de calor en invierno. Esto se logra utilizando una válvula que puede invertir el recorrido del fluido frigorígeno por la máquina, de manera que lo que en invierno es el condensador pase a ser el evaporador en verano y viceversa.</p>
 <p>En este vídeo puedes ver con más detalle la válvula que invierte el ciclo y hace que la misma máquina sirva para calentar en invierno y para enfriar en verano:</p>
-<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube-nocookie.com/embed/ZcQrMK2SsoI" title="Vídeo: inversión del ciclo frigorífico y válvula de 4 vías (Instalación y Mantenimiento)" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></p></div></div></section></div>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube-nocookie.com/embed/ZcQrMK2SsoI" title="Vídeo: inversión del ciclo frigorífico y válvula de 4 vías (Instalación y Mantenimiento)" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+<h4>La máquina reversible: un compresor para dos estaciones</h4>
+<p>En una máquina reversible hay que fijarse en qué es el foco frío y qué es el caliente en cada estación. En <strong>invierno</strong> funciona como bomba de calor: el interior es el foco caliente (T<sub>C</sub>), el exterior el frío (T<sub>F</sub>) y lo útil es el calor que entra en casa, así que se usa ε<sub>BC</sub>. En <strong>verano</strong> funciona como máquina frigorífica: el interior pasa a ser el foco frío, el exterior el caliente y lo útil es el calor que se saca de casa, así que se usa ε<sub>F</sub>.</p>
+<p>Como el compresor es el mismo, se calcula la potencia que necesita en cada estación (P = P<sub>C</sub>/ε<sub>BC</sub> en invierno y P = P<sub>F</sub>/ε<sub>F</sub> en verano) y tiene que poder dar <strong>la mayor de las dos</strong>.</p>
+<h4>El kilovatio hora y el coste de la energía</h4>
+<p>La factura de la luz no cobra julios sino <strong>kilovatios hora (kWh)</strong>: la energía que gasta un aparato de 1 kW funcionando durante una hora.</p>
+<div class="marco-formula"><p class="formula-bloque">\[1\ \text{kWh}=1\,000\ \text{W}\cdot \text{3 600}\ \text{s}=\text{3,6}\cdot 10^{6}\ \text{J}=\text{3 600}\ \text{kJ}\]</p></div>
+<p>Para saber lo que cuesta, se multiplica la energía en kWh por el precio de cada kWh: <strong>coste = E (kWh) · precio (€/kWh)</strong>. Por ejemplo, un compresor de 0,6 kW encendido 6 horas gasta 0,6 · 6 = 3,6 kWh; a 0,18 €/kWh, cuesta 3,6 · 0,18 = 0,65 €.</p>
+<div class="bloque bloque-resuelto"><p class="marco-titulo">Ejemplo resuelto. Máquina reversible y coste</p>
+<p>Una vivienda se mantiene a 21 °C todo el año con una bomba de calor reversible que funciona al 40 % del ciclo de Carnot. En invierno, con el exterior a 3 °C, tiene que aportar 25 000 kJ cada hora; en verano, con el exterior a 35 °C, tiene que extraer 20 000 kJ cada hora. Calcula:</p>
+<p>a) La eficiencia de la máquina en cada estación y la potencia mínima del compresor.</p>
+<p>b) Lo que cuesta un día de invierno con 8 horas de funcionamiento, si el kWh cuesta 0,15 €.</p>
+<p><strong><em>Solución</em></strong></p>
+<p><strong>a) Invierno</strong> (bomba de calor): T<sub>C</sub> = 21 + 273,15 = 294,15 K (la vivienda) y T<sub>F</sub> = 3 + 273,15 = 276,15 K (el exterior).</p>
+<p class="formula-bloque">\[\varepsilon_{BC,Carnot}=\frac{T_{C}}{T_{C}-T_{F}}=\frac{\text{294,15}\ \text{K}}{18\ \text{K}}=\text{16,34}\]</p>
+<p class="formula-bloque">\[ \varepsilon_{BC}=k\cdot\varepsilon_{BC,Carnot}=\text{0,40}\cdot \text{16,34}=\text{6,54}\]</p>
+<p>El calor que hay que aportar, como potencia: P<sub>C</sub> = 25 000 kJ / 3 600 s = 6,94 kW.</p>
+<p class="formula-bloque">\[P_{inv}=\frac{P_{C}}{\varepsilon_{BC}}=\frac{\text{6,94}\ \text{kW}}{\text{6,54}}=\text{1,06}\ \text{kW}\]</p>
+<p><strong>Verano</strong> (máquina frigorífica): ahora la vivienda es el foco frío, T<sub>F</sub> = 294,15 K, y el exterior el caliente, T<sub>C</sub> = 35 + 273,15 = 308,15 K.</p>
+<p class="formula-bloque">\[\varepsilon_{F,Carnot}=\frac{T_{F}}{T_{C}-T_{F}}=\frac{\text{294,15}\ \text{K}}{14\ \text{K}}=\text{21,01}\]</p>
+<p class="formula-bloque">\[ \varepsilon_{F}=k\cdot\varepsilon_{F,Carnot}=\text{0,40}\cdot \text{21,01}=\text{8,40}\]</p>
+<p>El calor que hay que sacar, como potencia: P<sub>F</sub> = 20 000 kJ / 3 600 s = 5,56 kW.</p>
+<p class="formula-bloque">\[P_{ver}=\frac{P_{F}}{\varepsilon_{F}}=\frac{\text{5,56}\ \text{kW}}{\text{8,40}}=\text{0,66}\ \text{kW}\]</p>
+<p>El compresor tiene que poder con la estación más exigente: <strong>P<sub>mín</sub> = 1,06 kW</strong>, la del invierno.</p>
+<p><strong>b)</strong> En un día de invierno el compresor trabaja 8 horas a 1,062 kW (con más decimales, para que el coste no arrastre el redondeo):</p>
+<p class="formula-bloque">\[E=P\cdot t=\text{1,062}\ \text{kW}\cdot 8\ \text{h}=\text{8,496}\ \text{kWh}\]</p>
+<p class="formula-bloque">\[\text{coste}=E\cdot \text{precio}=\text{8,496}\ \text{kWh}\cdot \text{0,15}\ \text{€/kWh}=\text{1,27}\ \text{€}\]</p>
+<p><strong>Resultado:</strong> ε<sub>BC</sub> = 6,54 en invierno y ε<sub>F</sub> = 8,40 en verano; el compresor necesita al menos 1,06 kW; un día de invierno gasta 8,50 kWh y cuesta 1,27 €.</p>
+</div>
+<h4>Cómo se valora si una opción es sostenible</h4>
+<p>Cuando te piden valorar razonadamente cuál de dos sistemas es más responsable con el medio ambiente, no basta con decir cuál eliges. Una buena respuesta tiene tres frases:</p>
+<ol>
+<li><strong>El dato:</strong> «para dar el mismo calor, A consume x kWh de energía y B consume y kWh».</li>
+<li><strong>El origen de la energía:</strong> «A usa electricidad, que puede venir de fuentes renovables, y emite menos CO<sub>2</sub> (nada si la electricidad es renovable); B quema un combustible fósil y emite CO<sub>2</sub> siempre».</li>
+<li><strong>El veredicto y su porqué:</strong> «elijo A porque gasta n veces menos energía y esa energía se puede descarbonizar».</li>
+</ol>
+<div class="bloque bloque-resuelto"><p class="marco-titulo">Ejemplo resuelto. Valoración de sostenibilidad</p>
+<p>Un taller necesita 30 000 kJ de calor cada hora. Puede instalar una bomba de calor con un COP real de 3 o una caldera de gasóleo con un rendimiento del 85 %. Calcula la energía que consume cada sistema en una hora, en kWh, y valora razonadamente cuál es más sostenible.</p>
+<p><strong><em>Solución</em></strong></p>
+<p class="formula-bloque">\[E_{BC}=\frac{Q}{\varepsilon_{BC}}=\frac{\text{30 000}\ \text{kJ}}{3}=\text{10 000}\ \text{kJ}=\frac{\text{10 000}}{\text{3 600}}\ \text{kWh}=\text{2,78}\ \text{kWh}\]</p>
+<p class="formula-bloque">\[E_{caldera}=\frac{Q}{\eta}=\frac{\text{30 000}\ \text{kJ}}{\text{0,85}}=\text{35 294}\ \text{kJ}=\text{9,80}\ \text{kWh}\]</p>
+<p><strong>Valoración:</strong> (1) Para dar el mismo calor, la bomba de calor consume 2,78 kWh y la caldera 9,80 kWh, unas 3,5 veces lo que consume la bomba; los otros 20 000 kJ la bomba los toma del aire exterior, y ahí está su ventaja. (2) La bomba de calor usa electricidad, que puede proceder de fuentes renovables, así que emite menos CO<sub>2</sub> (nada si la electricidad es renovable), mientras que la caldera quema gasóleo y emite CO<sub>2</sub> en cada hora de uso. (3) La bomba de calor es la opción más sostenible: gasta mucha menos energía final y esa energía se puede descarbonizar; aunque la electricidad no fuera toda renovable, seguiría saliendo ganando.</p>
+</div></div></div></section></div>
 </div>
 </div>
 </article>
