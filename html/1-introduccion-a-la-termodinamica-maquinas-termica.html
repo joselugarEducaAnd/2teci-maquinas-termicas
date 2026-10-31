@@ -2,8 +2,9 @@
 <html lang="es" id="exe-page-mt8g8z6s-3a15r6hmd">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="generator" content="eXeLearning v4.0.6">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="exe-pass-score" content="5">
 <link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <title>1. Introducción a la termodinámica. Máquinas térmicas. | Máquinas térmicas</title>
 <link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
@@ -55,7 +56,7 @@
 <p>La <strong>energía interna</strong> es la energía que tiene un sistema debida al movimiento constante de las partículas que lo forman (átomos o moléculas). Es, por lo tanto, un tipo de energía cinética debida a la "vibración" microscópica de las partículas de un cuerpo, que se mueven aunque el cuerpo esté en reposo.</p>
 <h2>Temperatura (T)</h2>
 <p>La <strong>temperatura</strong> indica la energía cinética <strong>media</strong> de las partículas de un sistema, no su energía interna total: un cubo de agua a 80 °C tiene más energía interna que una taza a 80 °C, porque tiene muchas más partículas. Además, un cuerpo puede absorber calor <strong>sin calentarse</strong> mientras cambia de estado; es lo que hace el fluido del frigorífico al evaporarse (lo verás en la sección 3).</p>
-<p>La temperatura se mide en <strong>kelvins (K) </strong>en el SI. Al medir la temperatura la energía cinética de las partículas, un sistema cuyas partículas estuvieran completamente inmóviles tendría una temperatura de 0 K. Sin embargo, esto es imposible porque el Principio de Incertidumbre hace que siempre haya una fluctuación en las partículas que hace imposible que permanezcan inmóviles en un punto determinado del espacio, por lo que <strong>es imposible alcanzar una temperatura de 0 K en el mundo real</strong>.</p>
+<p>La temperatura se mide en <strong>kelvins (K) </strong>en el SI. Al medir la temperatura la energía cinética de las partículas, un sistema cuyas partículas estuvieran completamente inmóviles tendría una temperatura de 0 K. Ese estado no se puede alcanzar: lo prohíbe el <strong>tercer principio de la termodinámica</strong>, que verás más abajo. Por eso <strong>es imposible alcanzar una temperatura de 0 K en el mundo real</strong>.</p>
 <p>Habitualmente se utilizan los <strong>grados</strong> <strong>celsius (°C)</strong> para medir temperaturas. <strong>Un grado celsius es equivalente a un kelvin,</strong> pero ambas escalas de unidades tienen un cero de temperaturas distinto. Por lo tanto:</p>
 <ul>
 <li>Si se calcula una <strong>temperatura absoluta</strong> en diferentes escalas, hay que hacer una traslación: <strong>T(K) = T(°C) + 273,15. </strong></li>
@@ -89,6 +90,7 @@
 </ul>
 <p>La ecuación de estado que describe un gas en estas condiciones se llama<span> </span><b><strong>ecuación de estado de un gas ideal</strong> y </b>es la siguiente:</p>
 <div class="marco-formula"><p class="formula-bloque">\[p\cdot V=n\cdot R\cdot T \quad \text{donde} \left\{\begin{array}{lll}n: \text{número de moles} \\ R: \text{0,082}\ \frac{\text{atm}\cdot\text{l}}{\text{K}\cdot\text{mol}}\\R: \text{8,314}\ \frac{\text{J}}{\text{K}\cdot\text{mol}}\end{array}\right.\]</p></div>
+<p>Los dos valores de R son la misma constante en unidades distintas: usa <strong>R = 0,082 atm·l/(K·mol)</strong> cuando la presión vaya en atmósferas y el volumen en litros, y <strong>R = 8,314 J/(K·mol)</strong> cuando trabajes en el SI, con la presión en pascales y el volumen en metros cúbicos.</p>
 <h2>Calentamiento de fluidos. Calores específicos.</h2>
 <p>Recuerda también la fórmula que permite calcular el calor absorbido por una sustancia:</p>
 <div class="marco-formula"><p class="formula-bloque">\[Q=m\cdot c\cdot \Delta T\]</p></div>
@@ -139,13 +141,13 @@
 <p><img alt="Criterio de signos de ΔU = Q − W: el calor que entra (Q &gt; 0) y el trabajo recibido (W &lt; 0) aumentan U; el calor que sale (Q &lt; 0) y el trabajo realizado (W &gt; 0) la disminuyen." src="../content/resources/criterioSignosPpt.jpeg" width="451" height="300" style="display: block; margin-left: auto; margin-right: auto;"></p>
 <p>Lógicamente, los flujos energéticos que salen del sistema disminuyen su energía interna, mientras que los que entran al sistema la aumentan. Para que la fórmula sea coherente, tenemos que tomar esos signos.</p>
 <h2>Segundo principio</h2>
-<p>En un sistema <strong>aislado</strong> la <strong>entropía</strong> nunca puede disminuir.&nbsp;Existen varios enunciados equivalentes para este principio, pero hay dos que utilizaremos nosotros implícitamente en esta unidad y que son:</p>
+<p>La <strong>entropía</strong> mide la parte de la energía de un sistema que ya no se puede convertir en trabajo: cuanto más repartida y desordenada está la energía, mayor es la entropía. El segundo principio dice que en un sistema <strong>aislado</strong> la entropía nunca puede disminuir.&nbsp;Existen varios enunciados equivalentes para este principio, pero hay dos que utilizaremos nosotros implícitamente en esta unidad y que son:</p>
 <ul>
 <li><strong>Enunciado de Clausius:</strong>es imposible que una máquina autónoma, sin ayuda de algún agente externo, transfiera calor de un cuerpo a otro más caliente.</li>
 <li><strong>Enunciado de Kelvin-Planck:</strong>&nbsp;no es posible un proceso cuyo único resultado sea la absorción de calor procedente de un foco y la conversión íntegra de este calor en trabajo.</li>
 </ul>
 <p>El segundo principio de la termodinámica establece un comportamiento espontáneo de los sistemas con el paso del tiempo y la <a href="#t011c4fee-44fe-dff7-4d49-923f757aa625" id="link011c4fee-44fe-dff7-4d49-923f757aa625" class="exe-tooltip definition-tt titled-tt" title="Irreversibilidad | Irreversibilidad">irreversibilidad</a> de los procesos. Es el único principio físico que establece una diferencia en el flujo del tiempo y que nos indica cómo evolucionará espontáneamente un sistema.</p>
-<p>Para comprender algo mejor en qué consiste el concepto llamado <strong>entropía</strong> que se define para este principio, puedes ver este vídeo:</p>
+<p>Si quieres ver con calma qué es la <strong>entropía</strong>, este vídeo lo explica muy bien:</p>
 <p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube-nocookie.com/embed/ttjM-dMPddY" title="Vídeo: qué es la entropía (Date un Vlog)" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
 <h2>Tercer principio</h2>
 <p>También conocido como postulado de Nernst, este principio afirma que no se puede alcanzar el&nbsp;cero absoluto de temperatura en un número finito de etapas. Puede definirse como:</p>
@@ -280,7 +282,7 @@
 <div class="box-content">
 <div id="idevice-mt8g8z6t-xsyao2yl9" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
 <div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Carnot, en 1824, estableció el ciclo termodinámico <strong>ideal</strong> de una máquina térmica, de la que se podría obtener <strong>el máximo rendimiento teórico.</strong></p>
-<p>Este ciclo se conoce con el nombre de “Ciclo de Carnot” y es un <strong>ciclo</strong> <strong><a href="#t9e736d11-d8e2-f62a-f33b-846a97cbb72a" id="link9e736d11-d8e2-f62a-f33b-846a97cbb72a" class="exe-tooltip definition-tt titled-tt" title="Ciclo reversible | Ciclo reversible">reversible</a> formado por dos transformaciones isotérmicas y otras dos adiabáticas.</strong>&nbsp;</p>
+<p>Este ciclo se conoce con el nombre de «ciclo de Carnot» y es un <strong>ciclo</strong> <strong><a href="#t9e736d11-d8e2-f62a-f33b-846a97cbb72a" id="link9e736d11-d8e2-f62a-f33b-846a97cbb72a" class="exe-tooltip definition-tt titled-tt" title="Ciclo reversible | Ciclo reversible">reversible</a> formado por dos transformaciones isotérmicas y otras dos adiabáticas.</strong>&nbsp;</p>
 <p><img alt="Ciclo de Carnot en el diagrama p-V: expansión isotérmica A→B a TC absorbiendo QC, expansión adiabática B→C, compresión isotérmica C→D a TF cediendo QF y compresión adiabática D→A." src="../content/resources/PV_Ciclo_de_Carnot.svg" width="500" height="390" style="display: block; margin-left: auto; margin-right: auto;"></p>
 <p><strong>A→B: expansión isotérmica.</strong> El fluido absorbe un calor Q<sub>C</sub> desde el foco caliente (T<sub>C</sub>) <strong>manteniéndose a esa temperatura </strong>y <strong>realiza un trabajo</strong>, aumentando de volumen. Al no haber variación de temperatura, <strong>ΔU = 0</strong>.</p>
 <p><strong>B→C: expansión adiabática.</strong> El fluido <strong>realiza trabajo</strong>, aumentando de volumen, <strong>a expensas de su energía interna</strong> y disminuyendo su temperatura desde la del foco caliente (T<sub>C</sub>) hasta la del foco frío (T<sub>F</sub>) <strong>sin intercambiar calor</strong> con el exterior.</p>
@@ -290,8 +292,8 @@
 <p>En el siguiente vídeo tienes una explicación muy completa de cómo funciona una máquina de Carnot a partir del minuto 4. Además de por esto, el vídeo es muy interesante porque también discute el concepto de entropía:</p>
 <p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube-nocookie.com/embed/hRLMIFZWqnw" title="Vídeo: la máquina de Carnot y la entropía (Veritasium en español)" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
 <p style="text-align: left;">La principal utilidad de la máquina de Carnot es establecer un límite a la eficiencia de una máquina térmica trabajando entre dos focos a temperaturas T<sub>C</sub> y T<sub>F</sub>. ¿Por qué se puede calcular con las temperaturas? Porque <strong>en la máquina de Carnot, y solo en ella, los calores son proporcionales a las temperaturas absolutas</strong>:</p>
-<p class="formula-bloque">\[\frac{Q_{F}}{Q_{C}}=\frac{T_{F}}{T_{C}}\quad\text{(solo en el ciclo reversible)}\]</p>
-<p style="text-align: left;">Al sustituir ese cociente en las expresiones del apartado anterior salen los rendimientos y las eficiencias ideales, que dependen solo de las temperaturas de los focos, <strong>siempre en kelvin (K)</strong>.</p>
+<p class="formula-bloque">\[\frac{Q_{F}}{Q_{C}}=\frac{T_{F}}{T_{C}}\]</p>
+<p style="text-align: left;">Esta igualdad vale <strong>solo en el ciclo reversible</strong>; en una máquina real, no. Al sustituir ese cociente en las expresiones del apartado anterior salen los rendimientos y las eficiencias ideales, que dependen solo de las temperaturas de los focos, <strong>siempre en kelvin (K)</strong>.</p>
 <p style="text-align: left;">Las eficiencias de Carnot de cada tipo de máquina térmica son las siguientes:</p>
 <h4>Rendimiento del motor térmico de Carnot</h4>
 <div class="marco-formula"><p class="formula-bloque">\[\eta=1-\frac{T_{F}}{T_{C}}\]</p></div>
@@ -338,8 +340,8 @@
 <p><strong>Resultado:</strong> ε<sub>BC</sub> = 6,60; el compresor necesita 1,36 kW y la máquina toma 7,64 kW del aire exterior. (Se ha operado sin redondear: con 6,60 redondeado sale lo mismo.)</p>
 <p><strong>b)</strong> Datos: T<sub>C</sub> = 600 + 273,15 = 873,15 K; T<sub>F</sub> = 40 + 273,15 = 313,15 K; η<sub>real</sub> = 0,30.</p>
 <p class="formula-bloque">\[\eta_{Carnot}=1-\frac{\text{313,15}\ \text{K}}{\text{873,15}\ \text{K}}=\text{0,6414}\]</p>
-<p class="formula-bloque">\[k=\frac{\eta_{real}}{\eta_{Carnot}}=\frac{\text{0,30}}{\text{0,6414}}=\text{0,4677}\]</p>
-<p><strong>Resultado:</strong> el rendimiento de Carnot sería del 64,14 % y el motor real alcanza el <strong>46,77 %</strong> de ese rendimiento ideal.</p>
+<p class="formula-bloque">\[k=\frac{\eta_{real}}{\eta_{Carnot}}=\frac{\text{0,30}}{\text{0,6414}}=\text{0,4678}\]</p>
+<p><strong>Resultado:</strong> el rendimiento de Carnot sería del 64,14 % y el motor real alcanza el <strong>46,78 %</strong> de ese rendimiento ideal.</p>
 </div>
 <div id="t9e736d11-d8e2-f62a-f33b-846a97cbb72a" class="exe-tooltip-text">
 <p>Un ciclo reversible es aquel que puede realizarse en sentido horario y antihorario, y además la inversión se puede realizar en cualquier punto.</p>
@@ -365,6 +367,7 @@
 <h4>Eficiencia o coeficiente de amplificación calorífica de la bomba de calor:</h4>
 <div class="marco-formula"><p class="formula-bloque">\[\varepsilon_{BC}=\text{COP}=\frac{P_{C}}{P}=\frac{P_{C}}{P_{C}-P_{F}}\]</p></div>
 <p>Como ya habrás deducido, \(P=\frac{W}{t}\) es la potencia mecánica (el trabajo por unidad de tiempo), \(P_{C}=\frac{Q_{C}}{t}\) es la potencia calorífica intercambiada con el foco caliente y \(P_{F}=\frac{Q_{F}}{t}\), la intercambiada con el foco frío. Se miden en <strong>vatios (W)</strong> o en <strong>caballos de vapor (CV)</strong>. Recuerda que <strong>1 CV = 735,5 W</strong>.</p>
+<div class="marco marco-nota"><p><strong>¿Qué potencia es «la potencia de la máquina»?</strong> Cuando un enunciado dice «la potencia de la máquina frigorífica», «la potencia de la bomba de calor» o «la potencia del compresor», se refiere siempre a <strong>P</strong>, la potencia mecánica (eléctrica) que consume la máquina; nunca a P<sub>F</sub> ni a P<sub>C</sub>.</p><p><strong>Ojo con P<sub>C</sub>:</strong> en la unidad de principios de máquinas usaste P<sub>C</sub> para el poder calorífico de un combustible. Aquí P<sub>C</sub> es la potencia intercambiada con el foco caliente; el poder calorífico lo escribiremos PCI.</p></div>
 <p>En un motor de combustión, P es la <strong>potencia útil</strong> y P<sub>C</sub> es la potencia que aporta el combustible al quemarse. En la sección 2 las llamaremos <strong>P<sub>u</sub></strong> y <strong>P<sub>ap</sub></strong>, que es como aparecen en los problemas de motores.</p>
 <div class="bloque bloque-resuelto"><p class="marco-titulo">Ejemplo resuelto. Rendimiento de un motor térmico</p>
 <p>Un motor térmico entrega una potencia útil de 80 CV y consume 180 000 kcal cada hora. Calcula su rendimiento y el calor que cede al foco frío en media hora.</p>
@@ -379,6 +382,18 @@
 <p class="formula-bloque">\[P_{F}=P_{C}-P=\text{209 000}\ \text{W}-\text{58 840}\ \text{W}=\text{150 160}\ \text{W}\]</p>
 <p class="formula-bloque">\[Q_{F}=P_{F}\cdot t=\text{150 160}\ \text{W}\cdot \text{1 800}\ \text{s}=\text{270 288 000}\ \text{J}=\text{270,29}\ \text{MJ}\]</p>
 <p><strong>Resultado:</strong> η = 28,15 %; Q<sub>F</sub> = 270,29 MJ en media hora. De cada 100 J que aporta el combustible, el motor aprovecha 28 y cede 72 al ambiente.</p>
+</div>
+<p>A veces el dato no es la potencia que consume la máquina, sino la que intercambia con el exterior. Entonces se combinan el primer principio y la eficiencia. En una bomba de calor de la que conoces P<sub>F</sub>, como P<sub>C</sub> = P<sub>F</sub> + P y P = P<sub>C</sub>/ε<sub>BC</sub>:</p>
+<p class="formula-bloque">\[P_{C}=P_{F}+\frac{P_{C}}{\varepsilon_{BC}}\]</p>
+<p class="formula-bloque">\[P_{C}=\frac{\varepsilon_{BC}\cdot P_{F}}{\varepsilon_{BC}-1}\]</p>
+<p>Y en una máquina frigorífica de la que conoces P<sub>C</sub>, de la misma forma, P<sub>F</sub> = ε<sub>F</sub>·P<sub>C</sub>/(ε<sub>F</sub> + 1).</p>
+<div class="bloque bloque-resuelto"><p class="marco-titulo">Ejemplo resuelto. El dato es la potencia intercambiada con el exterior</p>
+<p>Una bomba de calor con una eficiencia de 4 toma del aire exterior una potencia de 6&nbsp;kW. Calcula la potencia calorífica que entrega a la vivienda y la potencia del compresor.</p>
+<p><strong><em>Solución</em></strong></p>
+<p><strong>Datos:</strong> ε<sub>BC</sub> = 4; P<sub>F</sub> = 6&nbsp;kW.</p>
+<p class="formula-bloque">\[P_{C}=\frac{4\cdot 6\ \text{kW}}{4-1}=8\ \text{kW}\]</p>
+<p class="formula-bloque">\[P=\frac{P_{C}}{\varepsilon_{BC}}=\frac{8\ \text{kW}}{4}=2\ \text{kW}\]</p>
+<p><strong>Resultado:</strong> P<sub>C</sub> = 8&nbsp;kW y P = 2&nbsp;kW. Comprobación con el primer principio: P<sub>C</sub> − P<sub>F</sub> = 8&nbsp;kW − 6&nbsp;kW = 2&nbsp;kW = P.</p>
 </div></div></div></section></div>
 </div>
 </div>
@@ -390,28 +405,29 @@
 </button></header>
 <div class="box-content">
 <div id="idevice-mt8g8z6t-6cczbx95l" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
-<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><span style="color: #0000ff;"><strong>1.</strong> </span>Un motor térmico de 120 CV consume 250 000 kcal/h. Calcula el rendimiento del motor y el calor cedido al foco frío en 2 horas.<br><em><strong>Solución:</strong> η = 30,4 %; Q<sub>F</sub> = 1,455 GJ</em></p>
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="marco marco-nota"><p><strong>Cómo se corrige un problema: rigurosidad técnica (criterio 1.2).</strong> En todos los exámenes del curso se marcan cuatro reglas en cada problema. Practícalas ya en estos ejercicios:</p><ol><li><strong>Se puede seguir el camino:</strong> datos → planteamiento → cálculo → resultado.</li><li><strong>Fórmula antes que números:</strong> primero la expresión, luego la sustitución.</li><li><strong>Resultado con unidad.</strong></li><li><strong>Esquema cuando el problema lo pide.</strong></li></ol></div>
+<p><span style="color: #0000ff;"><strong>1.</strong> </span>Un motor térmico de 120 CV consume 250 000 kcal/h. Calcula el rendimiento del motor y el calor cedido al foco frío en 2 horas.<br><em><strong>Solución:</strong> η = 30,4 %; Q<sub>F</sub> = 1,455 GJ</em></p>
 <hr>
-<p><span style="color: #0000ff;"><strong>2.</strong></span> Una máquina térmica que sigue un ciclo de Carnot toma 1 100 kcal del foco caliente a 380 °C y cede 500 kcal al foco frío. Calcula:</p>
+<p><span style="color: #0000ff;"><strong>2.</strong></span> Una máquina térmica que sigue un ciclo de Carnot toma 1 100 kcal del foco caliente a 380 °C y cede 500 kcal al foco frío. Calcula:</p>
 <p style="padding-left: 30px;">a) &nbsp;Rendimiento si funcionara como motor, y eficiencia si funcionara como máquina frigorífica o como bomba de calor.<br>b) &nbsp;Temperatura del foco frío en °C</p>
-<p><em><strong>Solución:</strong> η = 54,55 %;&nbsp;ε<sub>F</sub>&nbsp;= 0,8333;&nbsp;ε<sub>BC</sub>&nbsp;= 1,8333; T<sub>F</sub> = 23,74 °C</em></p>
+<p><em><strong>Solución:</strong> η = 54,55 %;&nbsp;ε<sub>F</sub>&nbsp;= 0,8333;&nbsp;ε<sub>BC</sub>&nbsp;= 1,8333; T<sub>F</sub> = 23,74 °C</em></p>
 <hr>
-<p><span style="color: #0000ff;"><strong>3.</strong></span> Un motor térmico que describe el ciclo ideal de Carnot presenta un rendimiento del 45 % cuando la temperatura ambiente es de 10 °C. Calcula la temperatura del foco caliente.<br><em><strong>Solución:</strong> T<sub>C</sub> = 241,67 °C</em></p>
+<p><span style="color: #0000ff;"><strong>3.</strong></span> Un motor térmico que describe el ciclo ideal de Carnot presenta un rendimiento del 45 % cuando la temperatura ambiente es de 10 °C. Calcula la temperatura del foco caliente.<br><em><strong>Solución:</strong> T<sub>C</sub> = 241,67 °C</em></p>
 <hr>
-<p><span style="color: #0000ff;"><strong>4.</strong></span> Una máquina funciona al 40 % del ciclo reversible de Carnot entre dos focos a −3 °C y 22 °C y recibe desde el exterior una energía de 7000 kJ. Calcula:</p>
-<p style="padding-left: 30px;">a) &nbsp;Eficiencia de la máquina cuando funciona como máquina frigorífica <br>b) &nbsp;Eficiencia de la máquina cuando funciona como bomba de calor <br>c) &nbsp;Energía térmica entregada por la máquina al funcionar como bomba de calor <br>d) &nbsp;Energía térmica absorbida por la máquina al funcionar como máquina frigorífica</p>
-<p><em><strong>Solución:</strong> ε<sub>F</sub>&nbsp;= 4,32; ε<sub>BC</sub>&nbsp;= 4,72; Q<sub>C</sub> = 33 056,8 kJ (como bomba de calor); Q<sub>F</sub> = 30 256,8 kJ (como máquina frigorífica). Son dos funcionamientos distintos: por eso Q<sub>C</sub> − Q<sub>F</sub> no da los 7 000 kJ</em></p>
+<p><span style="color: #0000ff;"><strong>4.</strong></span> Una máquina funciona al 40 % del ciclo reversible de Carnot entre dos focos a −3 °C y 22 °C y se le aporta un trabajo de 7 000 kJ. Calcula:</p>
+<p style="padding-left: 30px;">a) &nbsp;Eficiencia de la máquina cuando funciona como máquina frigorífica <br>b) &nbsp;Eficiencia de la máquina cuando funciona como bomba de calor <br>c) &nbsp;Energía térmica entregada por la máquina al funcionar como bomba de calor <br>d) &nbsp;Energía térmica absorbida por la máquina al funcionar como máquina frigorífica</p>
+<p><em><strong>Solución:</strong> ε<sub>F</sub>&nbsp;= 4,32; ε<sub>BC</sub>&nbsp;= 4,72; Q<sub>C</sub> = 33 056,8 kJ (como bomba de calor); Q<sub>F</sub> = 30 256,8 kJ (como máquina frigorífica). Son dos funcionamientos distintos: por eso Q<sub>C</sub> − Q<sub>F</sub> no da los 7 000 kJ</em></p>
 <hr>
-<p><span style="color: #0000ff;"><strong>5.</strong></span> Algunos productos hortofrutícolas pueden conservarse a una temperatura comprendida entre 6 y 12 °C durante varios días, hasta el momento de su consumo. Para conseguir que la temperatura de la cámara de un almacén sea constantemente de 10 °C se emplea una máquina térmica reversible que funciona con una eficiencia del 22 % de la del Ciclo de Carnot. Considerando que la temperatura media en el exterior es de 5 °C en invierno y de 25 °C en verano, calcula:</p>
-<p style="padding-left: 30px;">a) &nbsp;La eficiencia de la máquina térmica en la época de invierno, y en la de verano <br>b) &nbsp;El calor retirado de la cámara o aportado a la misma en cada estación, si la potencia <em><strong>calorífica</strong></em> intercambiada con el exterior (el evaporador en invierno y el condensador en verano) es de 3 kW</p>
-<p><em><strong>Solución:</strong>&nbsp;ε<sub>BC,INV</sub> = 12,46;&nbsp;ε<sub>F,VER</sub> = 4,15; P<sub>C,INV</sub> = 3,262 kW; P<sub>F,VER</sub> = 2,417 kW</em></p>
+<p><span style="color: #0000ff;"><strong>5.</strong></span> Algunos productos hortofrutícolas pueden conservarse a una temperatura comprendida entre 6 y 12 °C durante varios días, hasta el momento de su consumo. Para conseguir que la temperatura de la cámara de un almacén sea constantemente de 10 °C se emplea una máquina térmica reversible que funciona con una eficiencia del 22 % de la del ciclo de Carnot. Considerando que la temperatura media en el exterior es de 5 °C en invierno y de 25 °C en verano, calcula:</p>
+<p style="padding-left: 30px;">a) &nbsp;La eficiencia de la máquina térmica en la época de invierno, y en la de verano <br>b) &nbsp;El calor retirado de la cámara o aportado a la misma en cada estación, si la potencia <em><strong>calorífica</strong></em> intercambiada con el exterior (el evaporador en invierno y el condensador en verano) es de 3 kW</p>
+<p><em><strong>Solución:</strong>&nbsp;ε<sub>BC,INV</sub> = 12,46;&nbsp;ε<sub>F,VER</sub> = 4,15; P<sub>C,INV</sub> = 3,262 kW; P<sub>F,VER</sub> = 2,418 kW</em></p>
 <hr>
-<p><span style="color: #0000ff;"><strong>6.</strong></span> Una máquina térmica directa funciona de acuerdo con un ciclo de Carnot perfecto entre las temperaturas T<sub>C</sub> = 256 °C y T<sub>F</sub> = 77 °C. Si el calor tomado del foco caliente es de 1350 J, determina:</p>
-<p style="padding-left: 30px;">a) &nbsp;Rendimiento de la máquina. <br>b) &nbsp;Calor aportado al foco frío. <br>c) &nbsp;Trabajo realizado. <br>d) &nbsp;Temperatura del foco frío si se desea conseguir un rendimiento del ciclo del 56%.</p>
+<p><span style="color: #0000ff;"><strong>6.</strong></span> Una máquina térmica directa funciona de acuerdo con un ciclo de Carnot perfecto entre las temperaturas T<sub>C</sub> = 256 °C y T<sub>F</sub> = 77 °C. Si el calor tomado del foco caliente es de 1 350 J, determina:</p>
+<p style="padding-left: 30px;">a) &nbsp;Rendimiento de la máquina. <br>b) &nbsp;Calor aportado al foco frío. <br>c) &nbsp;Trabajo realizado. <br>d) &nbsp;Temperatura del foco frío si se desea conseguir un rendimiento del ciclo del 56 %.</p>
 <p><em><strong>Solución:</strong>&nbsp;η = 33,83 %; Q<sub>F</sub> = 893,32 J; W = 456,68 J; T<sub>F</sub> = −40,32 °C</em></p>
 <hr>
-<p><span style="color: #0000ff;"><strong>7.</strong></span> Una máquina frigorífica de 1,5 kW de potencia mantiene una temperatura en su interior de 1 °C, funcionando al 20% del Ciclo de Carnot. Considerando que el valor de la temperatura en el exterior de la máquina se mantiene constante en 18 °C, calcula:</p>
-<p style="padding-left: 30px;">a) La eficiencia de la máquina <br>b) El calor eliminado por unidad de tiempo del interior del frigorífico <br>c) El calor aportado por unidad de tiempo al exterior del frigorífico</p>
+<p><span style="color: #0000ff;"><strong>7.</strong></span> Una máquina frigorífica de 1,5 kW de potencia mantiene una temperatura en su interior de 1 °C, funcionando al 20 % del ciclo de Carnot. Considerando que el valor de la temperatura en el exterior de la máquina se mantiene constante en 18 °C, calcula:</p>
+<p style="padding-left: 30px;">a) La eficiencia de la máquina <br>b) El calor eliminado por unidad de tiempo del interior del frigorífico <br>c) El calor aportado por unidad de tiempo al exterior del frigorífico</p>
 <p><em><strong>Solución:&nbsp;</strong>ε<sub>F</sub> = 3,23; P<sub>F</sub> = 4,84 kW; P<sub>C</sub> = 6,34 kW</em></p></div></div></section></div>
 </div>
 </div>
@@ -425,8 +441,8 @@
 <span>Toggle content</span>
 </button></header>
 <div class="box-content">
-<div id="idevice-mt8g8z6t-3ppyj31kl" class="idevice_node file-attachment" data-idevice-path="../idevices/file-attachment/" data-idevice-type="file-attachment" data-idevice-component-type="json" data-idevice-json-data="{&quot;intro&quot;:&quot;&lt;p&gt;Treinta y dos problemas de motores térmicos y ciclo de Carnot, máquinas frigoríficas, bombas de calor y máquinas reversibles, con sus resultados verificados. Los resultados van todos juntos, en un apartado «Resultados» al final del documento, para que compruebes el tuyo cuando hayas terminado.&lt;/p&gt;&quot;,&quot;showDescriptions&quot;:true,&quot;attachments&quot;:[{&quot;url&quot;:&quot;../content/resources/maquinas_termicas_resultados.pdf&quot;,&quot;filename&quot;:&quot;maquinas_termicas_resultados.pdf&quot;,&quot;mimeType&quot;:&quot;application/pdf&quot;,&quot;size&quot;:185621,&quot;title&quot;:&quot;Colección de problemas de máquinas térmicas.pdf&quot;,&quot;description&quot;:&quot;&quot;}]}" data-idevice-template="file-attachment.html">
-<div class="fileAttachment-IDevice"><div class="fileAttachment-intro"><p>Treinta y dos problemas de motores térmicos y ciclo de Carnot, máquinas frigoríficas, bombas de calor y máquinas reversibles, con sus resultados verificados. Los resultados van todos juntos, en un apartado «Resultados» al final del documento, para que compruebes el tuyo cuando hayas terminado.</p></div><ul class="fileAttachment-list"><li class="fileAttachment-item fileAttachment-item--file"><a class="fileAttachment-link" href="../content/resources/maquinas_termicas_resultados.pdf" download="maquinas_termicas_resultados.pdf"><span class="fileAttachment-text"><span class="fileAttachment-title">Colección de problemas de máquinas térmicas.pdf</span><span class="fileAttachment-meta">maquinas_termicas_resultados.pdf</span></span></a></li></ul></div>
+<div id="idevice-mt8g8z6t-3ppyj31kl" class="idevice_node file-attachment" data-idevice-path="../idevices/file-attachment/" data-idevice-type="file-attachment" data-idevice-component-type="json" data-idevice-json-data="{&quot;intro&quot;:&quot;&lt;p&gt;Treinta y dos problemas de motores térmicos y ciclo de Carnot, máquinas frigoríficas, bombas de calor y máquinas reversibles, con sus resultados verificados. Los resultados van todos juntos, en un apartado «Resultados» al final del documento, para que compruebes el tuyo cuando hayas terminado.&lt;/p&gt;&quot;,&quot;showDescriptions&quot;:true,&quot;attachments&quot;:[{&quot;url&quot;:&quot;../content/resources/maquinas_termicas_resultados.pdf&quot;,&quot;filename&quot;:&quot;maquinas_termicas_resultados.pdf&quot;,&quot;mimeType&quot;:&quot;application/pdf&quot;,&quot;size&quot;:189643,&quot;title&quot;:&quot;Colección de problemas de máquinas térmicas (con los resultados al final).pdf&quot;,&quot;description&quot;:&quot;&quot;}]}" data-idevice-template="file-attachment.html">
+<div class="fileAttachment-IDevice"><div class="fileAttachment-intro"><p>Treinta y dos problemas de motores térmicos y ciclo de Carnot, máquinas frigoríficas, bombas de calor y máquinas reversibles, con sus resultados verificados. Los resultados van todos juntos, en un apartado «Resultados» al final del documento, para que compruebes el tuyo cuando hayas terminado.</p></div><ul class="fileAttachment-list"><li class="fileAttachment-item fileAttachment-item--file"><a class="fileAttachment-link" href="../content/resources/maquinas_termicas_resultados.pdf" download="maquinas_termicas_resultados.pdf"><span class="fileAttachment-text"><span class="fileAttachment-title">Colección de problemas de máquinas térmicas (con los resultados al final).pdf</span><span class="fileAttachment-meta">maquinas_termicas_resultados.pdf</span></span></a></li></ul></div>
 </div>
 </div>
 </article>
